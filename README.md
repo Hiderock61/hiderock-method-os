@@ -2,15 +2,24 @@
 
 これは、ヒデロックが発明した **方法©️** を保存し、あとから再実行するための方法コレクションです。
 
+目的は、長期記憶や特定の会話部屋に頼らず、AIがこのリポジトリ内の方法©️を読み込み、同じ型で作業できるようにすることです。
+
 ## 位置づけ
 
 - **Notion**：正本。生きている操作基地。
 - **Googleドキュメント**：印刷用。紙の復旧地図。
-- **GitHub**：外部バックアップ兼、別AIへ渡すための設計図。
+- **GitHub**：公開可能な方法©️ホーム兼、別AIへ渡すための設計図。
 
 ## 札
 
 > Notionに入口、紙に地図、GitHubに設計図。
+
+## 最初に読むページ
+
+- [METHOD_HOME.md](./METHOD_HOME.md)  方法©️ホーム
+- [RECOVERY.md](./RECOVERY.md)  復旧ルート
+- [prompts/recovery-prompt.md](./prompts/recovery-prompt.md)  別AIへ渡す復旧プロンプト
+- [prompts/method-registration-prompt.md](./prompts/method-registration-prompt.md)  新しい方法©️を登録する時のプロンプト
 
 ## 使い方
 
@@ -33,6 +42,7 @@
 ```text
 hiderock-method-os/
 ├── README.md
+├── METHOD_HOME.md
 ├── RECOVERY.md
 ├── methods/
 │   ├── 001_jibunshi-notion-method.md
@@ -52,19 +62,19 @@ hiderock-method-os/
     └── print-recovery-memo.md
 ```
 
-## 安全方針
+## 公開方針
 
-このリポジトリは最初は **private** で運用する。
-公開する場合は、以下を削るか匿名化する。
+このリポジトリは、**方法©️そのものをAIに読み込ませるための公開可能な入口** として扱う。
 
-- 個人名
+ここには原則として、以下を入れない。
+
 - 住所
-- 家族の詳細
-- 資産金額の生々しい話
-- 刑務所・事件の具体詳細
-- 異性関係の具体詳細
+- 電話番号
+- メールアドレス
 - 非公開Notionリンク
-- Googleドキュメントの共有リンク
+- Googleドキュメントの非公開リンク
+- 家族・異性・資産・刑務所などの具体的な個人史詳細
+- 他人の実名や検証前の固有名詞
 
 ## 現在の代表的な方法©️
 
@@ -82,6 +92,10 @@ hiderock-method-os/
 ## 最重要思想
 
 > 記憶に頼るAI運用から、方法を読み込ませるAI運用へ。
+
+## 権利メモ
+
+方法©️はヒデロックの発明として扱う。無断で「自分の方法」として再配布・再販売しない。
 
 ## 最終更新
 
