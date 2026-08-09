@@ -54,7 +54,8 @@ hiderock-method-os/
 │   ├── 007_akechi-koumuten-method.md
 │   ├── 008_cozzy-key.md
 │   ├── 009_notion-seihon-bouei-method.md
-│   └── 010_method-registration-protocol.md
+│   ├── 010_method-registration-protocol.md
+│   └── 011_henshuushitsu-hakkutsu-sakuhinfuda-method.md
 ├── prompts/
 │   ├── method-registration-prompt.md
 │   └── recovery-prompt.md
@@ -88,6 +89,7 @@ hiderock-method-os/
 - Cozzy Key🔑
 - Notion正本防衛法©️
 - 方法©️登録プロトコル
+- 編集室発掘・作品札化法©️
 
 ## 最重要思想
 
