@@ -84,6 +84,13 @@
 - 目的：新しく発明された方法©️を、目的・使う場面・入力・出力・手順・NG例・プロンプトに分解して登録する。
 - 合図：`方法©️登録。`
 
+### 011｜編集室発掘・作品札化法©️ v1.0
+
+- ファイル：[methods/011_henshuushitsu-hakkutsu-sakuhinfuda-method.md](./methods/011_henshuushitsu-hakkutsu-sakuhinfuda-method.md)
+- サブタイトル：チャットログを本化手前まで掘る編集考古学。
+- 目的：長いチャットログを要約で潰さず、原文・発生史・差分・系統樹・作品群・作品札へ整理し、最小作品化テストまで進める。
+- 合図：`このチャットログを編集室発掘・作品札化法©️で整理して。`
+
 ## 復旧用プロンプト
 
 - [prompts/recovery-prompt.md](./prompts/recovery-prompt.md)
