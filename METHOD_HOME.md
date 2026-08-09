@@ -1,0 +1,96 @@
+# 方法©️ホーム｜ヒデロック発明OS©️
+
+このページは、ヒデロックが発明した **方法©️** をAIが読み込み、再実行するための入口です。
+
+人間向けの宣伝ページではなく、ChatGPT、Claude、GeminiなどのAIに読ませて、同じ方法©️で作業させるためのホームです。
+
+## 利用ルール
+
+- 方法©️はヒデロックの発明として扱う。
+- 無断で「自分の方法」として再配布・再販売しない。
+- 個人情報や非公開Notionリンクへ接続しない。
+- AIは、必要な方法©️ファイルを読んでから作業する。
+- 迷った時は README.md と RECOVERY.md に戻る。
+
+## AIへの最初の指示
+
+```text
+このリポジトリは、ヒデロック発明OS©️の方法置き場です。
+まず README.md、METHOD_HOME.md、RECOVERY.md を読んでください。
+そのうえで、必要な methods/ 内の方法©️を読み込み、その方法の手順・NG例・コピペ用プロンプトに従って作業してください。
+```
+
+## 方法©️一覧
+
+### 001｜自分史Notion法©️
+
+- ファイル：[methods/001_jibunshi-notion-method.md](./methods/001_jibunshi-notion-method.md)
+- 目的：人生の出来事をいきなり文章化せず、出来事札・タグ・リンクに分解して、あとから統合できるようにする。
+- 合図：`この素材を自分史Notion法©️で整理して。`
+
+### 002｜オープンレイヤー自分史法©️
+
+- ファイル：[methods/002_open-layer-jibunshi-method.md](./methods/002_open-layer-jibunshi-method.md)
+- 目的：自分史を閉じた章立てにせず、社会・音楽・身体・創作・海外生活などの別レイヤーへ逃がしながら増築する。
+- 合図：`この素材をオープンレイヤー自分史法©️で整理して。`
+
+### 003｜逆読みGo注釈法©️
+
+- ファイル：[methods/003_sakamiyomi-go-method.md](./methods/003_sakamiyomi-go-method.md)
+- 目的：長い会話を後ろから読み、重要断片を拾って会話断片カードや出来事札へ接続する。
+- 合図：`この会話を逆読みGo注釈法©️で整理して。`
+
+### 004｜社会的レイヤー札化方法©️
+
+- ファイル：[methods/004_shakaiteki-layer-fuda-method.md](./methods/004_shakaiteki-layer-fuda-method.md)
+- 目的：出来事を、事実・本人体感・外部の見え方・俯瞰視点・札に分けて整理する。
+- 合図：`この出来事を社会的レイヤー札化方法©️で整理して。`
+
+### 005｜上下俯瞰法©️
+
+- ファイル：[methods/005_jouge-fukan-method.md](./methods/005_jouge-fukan-method.md)
+- 目的：出来事を上の層・中の層・下の層・横の層に分けて構造として見る。
+- 合図：`これを上下俯瞰法©️で見て。`
+
+### 006｜ヒデロツク劇団方式©️
+
+- ファイル：[methods/006_hiderock-gekidan-method.md](./methods/006_hiderock-gekidan-method.md)
+- 目的：複数の視点キャラを登場させ、ひとつの問題を多角的に検討する。
+- 合図：`これをヒデロツク劇団方式©️で検討して。`
+
+### 007｜明智工務店施工依頼書法©️
+
+- ファイル：[methods/007_akechi-koumuten-method.md](./methods/007_akechi-koumuten-method.md)
+- 目的：AIやWork、Claude、GitHub作業へ渡すための施工依頼書を作る。
+- 合図：`これを明智工務店施工依頼書法©️で施工依頼にして。`
+
+### 008｜Cozzy Key🔑
+
+- ファイル：[methods/008_cozzy-key.md](./methods/008_cozzy-key.md)
+- 目的：今日の自分をどのモードに置くか、何を優先し、何をしないかを決める私的な時間管理OS。
+- 合図：`今日のCozzy Key🔑を見て。`
+
+### 009｜Notion正本防衛法©️
+
+- ファイル：[methods/009_notion-seihon-bouei-method.md](./methods/009_notion-seihon-bouei-method.md)
+- 目的：Notionのアカウントやワークスペースが複数あっても、正本入口へ戻れるようにする。
+- 合図：`Notion正本防衛法©️で整理して。`
+
+### 010｜方法©️登録プロトコル
+
+- ファイル：[methods/010_method-registration-protocol.md](./methods/010_method-registration-protocol.md)
+- 目的：新しく発明された方法©️を、目的・使う場面・入力・出力・手順・NG例・プロンプトに分解して登録する。
+- 合図：`方法©️登録。`
+
+## 復旧用プロンプト
+
+- [prompts/recovery-prompt.md](./prompts/recovery-prompt.md)
+- [prompts/method-registration-prompt.md](./prompts/method-registration-prompt.md)
+
+## 札
+
+> 方法©️は、記憶ではなく、読み込めるOSとして外に置く。
+
+## 最終更新
+
+2026-08-09
