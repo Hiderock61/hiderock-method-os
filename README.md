@@ -59,7 +59,8 @@ hiderock-method-os/
 │   ├── 012_sakayomi-bunki-method.md
 │   ├── 013_hiderock-tasou-world-map-method.md
 │   ├── 014_bujutsu-template-method.md
-│   └── 014_bujutsu-template-method-v1.2-jutsu-supplement.md
+│   ├── 014_bujutsu-template-method-v1.2-jutsu-supplement.md
+│   └── 014_bujutsu-template-method-v1.3-judo-supplement.md
 ├── prompts/
 │   ├── method-registration-prompt.md
 │   └── recovery-prompt.md
@@ -96,7 +97,7 @@ hiderock-method-os/
 - 編集室発掘・作品札化法©️
 - 坂読み分岐法©️
 - ヒデロック多層世界地図©️
-- 武術テンプレ法©️ v1.2｜柔術型・情報ポジション追補
+- 武術テンプレ法©️ v1.3｜柔道型・使用導線追補
 
 ## 発掘・保存・横断変換の流れ
 
@@ -107,9 +108,10 @@ hiderock-method-os/
 ↓
 ヒデロック多層世界地図©️ ＝ 保存・可視化装置
 ↓
-武術テンプレ法©️ v1.2
+武術テンプレ法©️ v1.3
   ├─ v1.1 相撲型：土俵・場外・競技規則を固定
-  └─ v1.2 柔術型：事実・根拠・反証・推論の情報ポジションを取る
+  ├─ v1.2 柔術型：事実・根拠・反証・推論の情報ポジションを取る
+  └─ v1.3 柔道型：開始認識→崩し→作り→掛けで次の一手まで運ぶ
 ↓
 創作、Web、広告、AI出力などへ横断接続
 ```
@@ -117,6 +119,8 @@ hiderock-method-os/
 武術テンプレ法©️は、武術を演出理論の科学的証明として扱う方法ではない。**武術から抽出した作用ラベルを同一素材へ当て、差分生成・診断・流派切替に使う比較テンプレ**として運用する。
 
 v1.2では柔術型を方法自身へ適用し、**事実／根拠・出典／関係／反証・矛盾／推論／未確認**を分けた。情報は量ではなく、次の判断を可能にする位置を一つずつ取る。
+
+v1.3では柔道型を方法自身へ適用し、**開始認識→崩し→作り→掛け→次の一手**を追加した。掛けは結論の押しつけではなく、使用者が第一の次アクションを1つ選べる状態を作る。
 
 ## 最重要思想
 
