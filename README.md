@@ -57,7 +57,8 @@ hiderock-method-os/
 │   ├── 010_method-registration-protocol.md
 │   ├── 011_henshuushitsu-hakkutsu-sakuhinfuda-method.md
 │   ├── 012_sakayomi-bunki-method.md
-│   └── 013_hiderock-tasou-world-map-method.md
+│   ├── 013_hiderock-tasou-world-map-method.md
+│   └── 014_bujutsu-template-method.md
 ├── prompts/
 │   ├── method-registration-prompt.md
 │   └── recovery-prompt.md
@@ -94,8 +95,9 @@ hiderock-method-os/
 - 編集室発掘・作品札化法©️
 - 坂読み分岐法©️
 - ヒデロック多層世界地図©️
+- 武術テンプレ法©️
 
-## 今回追加した二段構え
+## 発掘・保存・横断変換の流れ
 
 ```text
 会話・坂読み
@@ -104,7 +106,9 @@ hiderock-method-os/
 ↓
 ヒデロック多層世界地図©️ ＝ 保存・可視化装置
 ↓
-オープンレイヤー自分史法©️ などへ横断接続
+武術テンプレ法©️ ＝ 同じ素材を別の作用点へ変換・比較する装置
+↓
+オープンレイヤー自分史法©️、創作、Web、広告、AI出力などへ横断接続
 ```
 
 ## 最重要思想
