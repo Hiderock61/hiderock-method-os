@@ -55,7 +55,9 @@ hiderock-method-os/
 │   ├── 008_cozzy-key.md
 │   ├── 009_notion-seihon-bouei-method.md
 │   ├── 010_method-registration-protocol.md
-│   └── 011_henshuushitsu-hakkutsu-sakuhinfuda-method.md
+│   ├── 011_henshuushitsu-hakkutsu-sakuhinfuda-method.md
+│   ├── 012_sakayomi-bunki-method.md
+│   └── 013_hiderock-tasou-world-map-method.md
 ├── prompts/
 │   ├── method-registration-prompt.md
 │   └── recovery-prompt.md
@@ -90,6 +92,20 @@ hiderock-method-os/
 - Notion正本防衛法©️
 - 方法©️登録プロトコル
 - 編集室発掘・作品札化法©️
+- 坂読み分岐法©️
+- ヒデロック多層世界地図©️
+
+## 今回追加した二段構え
+
+```text
+会話・坂読み
+↓
+坂読み分岐法©️ ＝ 発掘装置
+↓
+ヒデロック多層世界地図©️ ＝ 保存・可視化装置
+↓
+オープンレイヤー自分史法©️ などへ横断接続
+```
 
 ## 最重要思想
 
@@ -101,4 +117,4 @@ hiderock-method-os/
 
 ## 最終更新
 
-2026-08-09
+2026-08-11
