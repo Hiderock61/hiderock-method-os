@@ -107,22 +107,25 @@
 - 重要：レイヤー数を最初から固定せず、本人観測とAI推論、現象と意味を混同しない。
 - 合図：`この素材をヒデロック多層世界地図©️で整理して。`
 
-### 014｜🥋武術テンプレ法©️ v1.5｜空手型・最小起動追補
+### 014｜🥋武術テンプレ法©️ v1.6｜システマ型・常駐観測／流派切替制御追補
 
 - 基礎本体：[methods/014_bujutsu-template-method.md](./methods/014_bujutsu-template-method.md)（v1.1 相撲型・土俵固定）
 - v1.2追補：[methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md](./methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md)
 - v1.3追補：[methods/014_bujutsu-template-method-v1.3-judo-supplement.md](./methods/014_bujutsu-template-method-v1.3-judo-supplement.md)
 - v1.4追補：[methods/014_bujutsu-template-method-v1.4-taikyokuken-supplement.md](./methods/014_bujutsu-template-method-v1.4-taikyokuken-supplement.md)
-- 最新追補：[methods/014_bujutsu-template-method-v1.5-karate-supplement.md](./methods/014_bujutsu-template-method-v1.5-karate-supplement.md)
+- v1.5追補：[methods/014_bujutsu-template-method-v1.5-karate-supplement.md](./methods/014_bujutsu-template-method-v1.5-karate-supplement.md)
+- 最新追補：[methods/014_bujutsu-template-method-v1.6-systema-supplement.md](./methods/014_bujutsu-template-method-v1.6-systema-supplement.md)
 - 目的：同じ素材を固定したまま、武術ごとの作用点を別ジャンルへ移植し、制作・分析・修理を比較する。
 - v1.1：相撲型で **土俵内／場外／比較条件／終了条件** を固定。流派は **作用点＋操作＋結果** で判定。
 - v1.2：柔術型で **事実／根拠・出典／関係／反証・矛盾／推論／未確認** を分け、次の判断を可能にする情報ポジションを取る。
 - v1.3：柔道型で **開始認識→崩し→作り→掛け→次の一手** の使用導線を作る。
 - v1.4：太極拳型で **前流派の出力→切替サイン→次流派の入力** を接続し、保持情報・保留情報・逆戻り条件・連続性検品を入れる。
 - v1.5：空手型で **内部工程を保持したまま外部出力だけを一点へ圧縮**。最小入力は「素材／困りごと／欲しい結果」、最小出力は「現在状態／推奨流派／理由／次の一手」。
-- 重要：短くするために内部工程を捨てない。**見せない工程はあってよいが、消してよい工程ではない。**
-- 合図：`武術テンプレ©️。何流が必要？ 次の一手まで。`
-- 一点モード：`この素材、武術テンプレ©️で。次の一手だけ。`
+- v1.6：システマ型を自己適用し、**現在観測→目的との差→作用点変化→継続／切替→再観測** を回す常駐制御層を追加。
+- 重要：システマ型は局所流派としての役割も残す。v1.6では全流派を横断して状態変化を検出する運用層として使うが、他流派より上位という意味ではない。
+- 合図：`武術テンプレ©️ v1.6。今の状態を観測して、流派を続けるか切り替えるか判定。次の一手と再観測点まで。`
+- 短縮：`武術テンプレ©️。今どの流派？ 続行か交代か見て。`
+- 一点モード：`武術テンプレ©️ v1.6。観測して、今の次の一手だけ。`
 
 ## 復旧用プロンプト
 
