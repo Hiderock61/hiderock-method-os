@@ -107,15 +107,17 @@
 - 重要：レイヤー数を最初から固定せず、本人観測とAI推論、現象と意味を混同しない。
 - 合図：`この素材をヒデロック多層世界地図©️で整理して。`
 
-### 014｜🥋武術テンプレ法©️ v1.2｜柔術型・情報ポジション追補
+### 014｜🥋武術テンプレ法©️ v1.3｜柔道型・使用導線追補
 
 - 基礎本体：[methods/014_bujutsu-template-method.md](./methods/014_bujutsu-template-method.md)（v1.1 相撲型・土俵固定）
-- 最新追補：[methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md](./methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md)
+- v1.2追補：[methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md](./methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md)
+- 最新追補：[methods/014_bujutsu-template-method-v1.3-judo-supplement.md](./methods/014_bujutsu-template-method-v1.3-judo-supplement.md)
 - 目的：同じ素材を固定したまま、武術ごとの作用点を別ジャンルへ移植し、制作・分析・修理を比較する。
 - v1.1：相撲型で **土俵内／場外／比較条件／終了条件** を固定。流派は **作用点＋操作＋結果** で判定。
-- v1.2：柔術型で **事実／根拠・出典／関係／反証・矛盾／推論／未確認** を分け、次の判断を可能にする情報ポジションを一つずつ取る。
-- 重要：武術を科学的根拠にする方法ではない。武術由来の作用ラベルを同一素材へ当て、差分生成・診断・切替へ使う。
-- 合図：`この素材を武術テンプレ法©️ v1.2で扱って。`
+- v1.2：柔術型で **事実／根拠・出典／関係／反証・矛盾／推論／未確認** を分け、次の判断を可能にする情報ポジションを取る。
+- v1.3：柔道型で **開始認識→崩し→作り→掛け→次の一手** の使用導線を作り、初見使用者を実行可能な位置まで運ぶ。
+- 重要：掛けは「結論を押しつける」ことではなく、**次の一手を1つ選べる状態を作ること**。
+- 合図：`この素材を武術テンプレ法©️ v1.3で扱って。`
 
 ## 復旧用プロンプト
 
