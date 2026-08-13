@@ -63,7 +63,8 @@ hiderock-method-os/
 │   ├── 014_bujutsu-template-method-v1.3-judo-supplement.md
 │   ├── 014_bujutsu-template-method-v1.4-taikyokuken-supplement.md
 │   ├── 014_bujutsu-template-method-v1.5-karate-supplement.md
-│   └── 014_bujutsu-template-method-v1.6-systema-supplement.md
+│   ├── 014_bujutsu-template-method-v1.6-systema-supplement.md
+│   └── 015_yasuri-sekou-method.md
 ├── prompts/
 │   ├── method-registration-prompt.md
 │   └── recovery-prompt.md
@@ -101,6 +102,7 @@ hiderock-method-os/
 - 坂読み分岐法©️
 - ヒデロック多層世界地図©️
 - 武術テンプレ法©️ v1.6｜システマ型・常駐観測／流派切替制御追補
+- ヤスリ施工©️ v1.0
 
 ## 発掘・保存・横断変換の流れ
 
@@ -162,4 +164,4 @@ v1.6ではシステマ型を方法自身へ適用し、**現在観測／目的�
 
 ## 最終更新
 
-2026-08-11
+2026-08-13
