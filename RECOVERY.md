@@ -33,6 +33,7 @@ GitHub = 方法©️の公開可能な設計図
 
 ```text
 methods/017_taiwa-kaishu-method.md
+prompts/taiwa-kaishu-v2-prompt.md
 ```
 
 通常の合図：
@@ -69,7 +70,7 @@ methods/017_taiwa-kaishu-method.md
 ```text
 このリポジトリは、ヒデロック発明OS©️の方法置き場です。
 README.md、METHOD_HOME.md、RECOVERY.md を読んでから、必要な methods/ 内の方法©️に従って作業してください。
-対話の回収・復帰なら methods/017_taiwa-kaishu-method.md を必ず先に読んでください。
+対話の回収・復帰なら methods/017_taiwa-kaishu-method.md と prompts/taiwa-kaishu-v2-prompt.md を必ず先に読んでください。
 ```
 
 ## 公開方針
