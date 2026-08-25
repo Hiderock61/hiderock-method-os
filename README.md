@@ -1,167 +1,116 @@
 # ヒデロック発明OS©️
 
-これは、ヒデロックが発明した **方法©️** を保存し、あとから再実行するための方法コレクションです。
+更新: 2026-08-26
 
-目的は、長期記憶や特定の会話部屋に頼らず、AIがこのリポジトリ内の方法©️を読み込み、同じ型で作業できるようにすることです。
+これは、ヒデロックが発明した **AI方法©️ / 協働方法©️ / OS / プロトコル / ガイド** を保存し、別部屋・別AIでも読み直して再実行するための公開可能な設計図リポジトリ。
 
-## 位置づけ
+目的は、**AIの長期記憶や特定の会話部屋に依存せず、必要な方法をファイルから読み込んで同じ型で作業できるようにすること**。
 
-- **Notion**：正本。生きている操作基地。
-- **Googleドキュメント**：印刷用。紙の復旧地図。
-- **GitHub**：公開可能な方法©️ホーム兼、別AIへ渡すための設計図。
+> **記憶に頼るAI運用から、設計図を読み込ませるAI運用へ。**
 
-## 札
+---
 
-> Notionに入口、紙に地図、GitHubに設計図。
+## 最初に読む
 
-## 最初に読むページ
+1. [METHOD_HOME.md](./METHOD_HOME.md) — 発明品の種類と索引
+2. [RECOVERY.md](./RECOVERY.md) — 別部屋・別AIへの復旧ルート
+3. 必要な個別正本ファイル
 
-- [METHOD_HOME.md](./METHOD_HOME.md)  方法©️ホーム
-- [RECOVERY.md](./RECOVERY.md)  復旧ルート
-- [prompts/recovery-prompt.md](./prompts/recovery-prompt.md)  別AIへ渡す復旧プロンプト
-- [prompts/method-registration-prompt.md](./prompts/method-registration-prompt.md)  新しい方法©️を登録する時のプロンプト
+### 🎭 BONSAI©️を使いたい場合
 
-## 使い方
+一般索引を読む前後どちらでもよいが、**BONSAI©️の初見理解は必ずここから始める**。
 
-新しい方法©️が生まれたら、以下の合図を使う。
+- [BONSAI_START_HERE.md](./BONSAI_START_HERE.md) — 「何のための方法か」「劇団員とは何か」をゼロ前提で説明
+- [methods/006_hiderock-gekidan-method.md](./methods/006_hiderock-gekidan-method.md) — v0.5実行アルゴリズム
+- [methods/006A_hiderock-gekidan-roster.md](./methods/006A_hiderock-gekidan-roster.md) — 全52役・11系統の観測器台帳
+- [methods/006B_hiderock-gekidan-emoji-legend.md](./methods/006B_hiderock-gekidan-emoji-legend.md) — 全52役＋構造記号の視覚凡例
+- [prompts/bonsai-start-prompt.md](./prompts/bonsai-start-prompt.md) — 別部屋・別AI用コピペ
+
+**重要:** BONSAI©️の「劇団」は寸劇の意味ではない。劇団員は、異なる角度を安定して測るための**観測器 / 認知レンズ**として使う。
+
+---
+
+## 発明品の5分類
+
+- **🤖 AI方法©️**：入力を渡せばAIが主要処理を開始できる。
+- **🤝 協働方法©️**：AI処理と人間側の実機・現実行動の往復で成立する。
+- **🔑 OS**：生活や作業全体の置き方を決める運用体系。
+- **🧰 プロトコル**：正本・登録・復旧など仕組みを守る規則。
+- **🧭 ガイド**：人間が現実で動くための探索・行動ガイド。AIは補助役。
+
+---
+
+## 正本の役割分担
+
+- **Notion**：運用正本。日常運用で更新する生きたカード。
+- **GitHub / このリポジトリ**：別AIへ渡せる再現用設計図。
+- **Hiderock61/hiderock61.github.io `/methods/`**：公開総合索引。
+
+札:
+
+> **Notionに運用正本、GitHubに設計図、本館に入口。**
+
+---
+
+## 別AIへの最短指示
 
 ```text
-これ、方法©️候補。
-言語化して、方法コレクションDB｜ヒデロック発明OS©️に入れて。
-目的・使う場面・入力・出力・手順・NG例・コピペ用プロンプトまで作って。
+このリポジトリはヒデロック発明OS©️の再現用設計図です。
+README.md、METHOD_HOME.md、RECOVERY.md を読み、対象の発明品の正本ファイルを確認してから実行してください。
+記憶だけで方法を再現しないでください。
 ```
 
-短く言う場合：
+BONSAI©️なら:
 
 ```text
-方法©️登録。
+BONSAI_START_HERE.md を入口にし、006本体・006A全52役台帳・006B絵文字凡例を読んでから実行してください。
 ```
 
-## ディレクトリ構成
+---
+
+## 主要ファイル
 
 ```text
 hiderock-method-os/
 ├── README.md
 ├── METHOD_HOME.md
 ├── RECOVERY.md
+├── BONSAI_START_HERE.md
 ├── methods/
-│   ├── 001_jibunshi-notion-method.md
-│   ├── 002_open-layer-jibunshi-method.md
-│   ├── 003_sakamiyomi-go-method.md
-│   ├── 004_shakaiteki-layer-fuda-method.md
-│   ├── 005_jouge-fukan-method.md
+│   ├── 001_...
+│   ├── ...
 │   ├── 006_hiderock-gekidan-method.md
-│   ├── 007_akechi-koumuten-method.md
-│   ├── 008_cozzy-key.md
-│   ├── 009_notion-seihon-bouei-method.md
-│   ├── 010_method-registration-protocol.md
-│   ├── 011_henshuushitsu-hakkutsu-sakuhinfuda-method.md
-│   ├── 012_sakayomi-bunki-method.md
-│   ├── 013_hiderock-tasou-world-map-method.md
-│   ├── 014_bujutsu-template-method.md
-│   ├── 014_bujutsu-template-method-v1.2-jutsu-supplement.md
-│   ├── 014_bujutsu-template-method-v1.3-judo-supplement.md
-│   ├── 014_bujutsu-template-method-v1.4-taikyokuken-supplement.md
-│   ├── 014_bujutsu-template-method-v1.5-karate-supplement.md
-│   ├── 014_bujutsu-template-method-v1.6-systema-supplement.md
-│   └── 015_yasuri-sekou-method.md
+│   ├── 006A_hiderock-gekidan-roster.md
+│   ├── 006B_hiderock-gekidan-emoji-legend.md
+│   ├── ...
+│   └── 019_a-method.md
 ├── prompts/
-│   ├── method-registration-prompt.md
-│   └── recovery-prompt.md
+│   ├── recovery-prompt.md
+│   ├── bonsai-start-prompt.md
+│   └── method-registration-prompt.md
 └── docs/
-    └── print-recovery-memo.md
 ```
+
+全発明品の番号・用途・合図は [METHOD_HOME.md](./METHOD_HOME.md) を参照。
+
+---
 
 ## 公開方針
 
-このリポジトリは、**方法©️そのものをAIに読み込ませるための公開可能な入口** として扱う。
+このリポジトリには原則として、**方法・構造・再現仕様**を置く。
 
-ここには原則として、以下を入れない。
+以下は置かない。
 
-- 住所
-- 電話番号
-- メールアドレス
+- 住所・電話番号・メールアドレス
 - 非公開Notionリンク
-- Googleドキュメントの非公開リンク
-- 家族・異性・資産・刑務所などの具体的な個人史詳細
-- 他人の実名や検証前の固有名詞
+- 非公開Googleドキュメントリンク
+- 他者の個人情報
+- 方法再現に不要な具体的な私生活情報
 
-## 現在の代表的な方法©️
-
-- 自分史Notion法©️
-- オープンレイヤー自分史法©️
-- 逆読みGo注釈法©️
-- 社会的レイヤー札化方法©️
-- 上下俯瞰法©️
-- ヒデロツク劇団方式©️
-- 明智工務店施工依頼書法©️
-- Cozzy Key🔑
-- Notion正本防衛法©️
-- 方法©️登録プロトコル
-- 編集室発掘・作品札化法©️
-- 坂読み分岐法©️
-- ヒデロック多層世界地図©️
-- 武術テンプレ法©️ v1.6｜システマ型・常駐観測／流派切替制御追補
-- ヤスリ施工©️ v1.0
-
-## 発掘・保存・横断変換の流れ
-
-```text
-会話・坂読み
-↓
-坂読み分岐法©️ ＝ 発掘装置
-↓
-ヒデロック多層世界地図©️ ＝ 保存・可視化装置
-↓
-武術テンプレ法©️ v1.6
-  ├─ v1.1 相撲型：土俵・場外・競技規則を固定
-  ├─ v1.2 柔術型：事実・根拠・反証・推論の情報ポジションを取る
-  ├─ v1.3 柔道型：開始認識→崩し→作り→掛けで次の一手まで運ぶ
-  ├─ v1.4 太極拳型：前流派の出力を次流派の入力へ連続接続する
-  ├─ v1.5 空手型：内部工程を保持したまま外部出力を一点へ圧縮する
-  └─ v1.6 システマ型：現在観測→目的との差→作用点変化→継続／切替→再観測を常駐制御する
-↓
-創作、Web、広告、AI出力などへ横断接続
-```
-
-武術テンプレ法©️は、武術を演出理論の科学的証明として扱う方法ではない。**武術から抽出した作用ラベルを同一素材へ当て、差分生成・診断・流派切替に使う比較テンプレ**として運用する。
-
-v1.2では柔術型を方法自身へ適用し、**事実／根拠・出典／関係／反証・矛盾／推論／未確認**を分けた。情報は量ではなく、次の判断を可能にする位置を一つずつ取る。
-
-v1.3では柔道型を方法自身へ適用し、**開始認識→崩し→作り→掛け→次の一手**を追加した。掛けは結論の押しつけではなく、使用者が第一の次アクションを1つ選べる状態を作る。
-
-v1.4では太極拳型を方法自身へ適用し、**前流派の出力／切替サイン／次流派の入力／保持情報／保留情報／逆戻り条件／連続性検品**を追加した。流派を工程名として並べるのではなく、前の結果を次の材料へ流す。
-
-v1.5では空手型を方法自身へ適用し、**最小入力3点（素材／困りごと／欲しい結果）**から内部工程を起動し、外部は**現在状態／推奨流派／理由／次の一手**、または一文・一操作へ圧縮できるようにした。短くするために内部工程・根拠・反証を捨てない。
-
-v1.6ではシステマ型を方法自身へ適用し、**現在観測／目的状態との差／現在作用点／作用点の変化／継続・切替判定／次の再観測点**を追加した。システマ型は局所流派としても使えるが、v1.6では全流派を横断する常駐観測層として、今の流派が現在状態にまだ適合しているかを再判定する。数値や反応が改善しても、それだけで成功とはせず目的状態との差で見る。
-
-標準起動：
-
-```text
-武術テンプレ©️ v1.6。今の状態を観測して、流派を続けるか切り替えるか判定。次の一手と再観測点まで。
-```
-
-短縮：
-
-```text
-武術テンプレ©️。今どの流派？ 続行か交代か見て。
-```
-
-一点モード：
-
-```text
-武術テンプレ©️ v1.6。観測して、今の次の一手だけ。
-```
+---
 
 ## 最重要思想
 
-> 記憶に頼るAI運用から、方法を読み込ませるAI運用へ。
+> **方法を覚えているAIを探すのではなく、初見AIでも読める方法を外に置く。**
 
-## 権利メモ
-
-方法©️はヒデロックの発明として扱う。無断で「自分の方法」として再配布・再販売しない。
-
-## 最終更新
-
-2026-08-13
+> **再現できるかどうかは、本人との共通知識ではなく、設計図だけで意味と手順が復元できるかで判定する。**
