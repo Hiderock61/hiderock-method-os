@@ -44,6 +44,8 @@ methods/006_hiderock-gekidan-method.md
 methods/006A_hiderock-gekidan-roster.md
 ↓
 methods/006B_hiderock-gekidan-emoji-legend.md
+↓
+methods/006C_hideroko-injection-protocol.md
 ```
 
 別部屋・別AIへ渡す時は:
@@ -64,7 +66,7 @@ prompts/bonsai-start-prompt.md
 
 ```text
 ヒデロツク劇団方法©️（BONSAI©️）で検討してください。
-Hiderock61/hiderock-method-os の BONSAI_START_HERE.md を入口に、006本体・006A全52役台帳・006B絵文字凡例を読んでから開始してください。
+Hiderock61/hiderock-method-os の BONSAI_START_HERE.md を入口に、006本体・006A全52役台帳・006B絵文字凡例・006Cヒデロコ投入規則を読んでから開始してください。
 ```
 
 ### BONSAI©️復旧時の最低確認
@@ -76,9 +78,60 @@ Hiderock61/hiderock-method-os の BONSAI_START_HERE.md を入口に、006本体�
 - 🌿生存枝そのものを次トリガーへ送る
 - 配役はトリガーごとに再計算
 - 🫨ヒデロコは共有前提破壊役で、最後のまとめ役ではない
+- 🫨ヒデロコは半手動・半自動。AUTO投入とMANUAL投入を両立し、どちらも自動生存させない
 - 🕵🏼‍♀️探偵AIの外部確認結果は舞台へ再投入
 
-この理解がない場合は、BONSAI_START_HERE.mdを再読する。
+この理解がない場合は、BONSAI_START_HERE.mdと006Cを再読する。
+
+---
+
+## 🥋 武術テンプレ法©️へ最短復旧
+
+武術テンプレ法©️は「武術名を付けて議論する方法」ではない。
+
+**同じ素材を固定し、流派ごとの作用点・操作・結果を切り替える比較・診断・修理法**として復旧する。
+
+初見AIは次の順で読む。
+
+```text
+BUJUTSU_START_HERE.md
+↓
+methods/014_bujutsu-template-method.md              # v1.1 相撲型・土俵固定
+↓
+methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md
+↓
+methods/014_bujutsu-template-method-v1.3-judo-supplement.md
+↓
+methods/014_bujutsu-template-method-v1.4-taikyokuken-supplement.md
+↓
+methods/014_bujutsu-template-method-v1.5-karate-supplement.md
+↓
+methods/014_bujutsu-template-method-v1.6-systema-supplement.md
+```
+
+別部屋・別AIへ渡す時:
+
+```text
+prompts/bujutsu-start-prompt.md
+```
+
+最短合図:
+
+```text
+武術テンプレ©️。今どの流派？ 続行か交代か見て。
+```
+
+### 武術テンプレ復旧時の最低確認
+
+- 最新版v1.6は、v1.1〜v1.6を積み重ねた累積仕様
+- 流派名はキャラクターではなく、作用点・操作・結果を識別する変換ラベル
+- 🤼相撲型 = 土俵・境界
+- 🇧🇷柔術型 = 事実・根拠・反証・推論の情報ポジション
+- 🥋柔道型 = 崩し→作り→掛けで次の一手まで運ぶ
+- ☯️太極拳型 = 前流派の出力を次流派の入力へ接続
+- 🥋空手型 = 内部工程を保持して外部出力を一点へ圧縮
+- 🫁システマ型 = 現在状態を常駐観測し、作用点が変われば流派継続／切替を再判定
+- 同じ素材・目的・確認済み事実を、流派切替のたびにすり替えない
 
 ---
 
@@ -119,7 +172,9 @@ README.md、METHOD_HOME.md、RECOVERY.md を読んでから、対象の正本フ
 記憶や一般論から方法を推測しないでください。
 ```
 
-BONSAI©️なら、上記に加えて **BONSAI_START_HERE.md → 006 → 006A → 006B** を必読とする。
+BONSAI©️なら、上記に加えて **BONSAI_START_HERE.md → 006 → 006A → 006B → 006C** を必読。
+
+武術テンプレ法©️なら、**BUJUTSU_START_HERE.md → 014基礎本体 → v1.2〜v1.6追補** を必読。
 
 ---
 
