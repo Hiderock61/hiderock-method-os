@@ -24,9 +24,23 @@
 - [methods/006_hiderock-gekidan-method.md](./methods/006_hiderock-gekidan-method.md) — v0.5実行アルゴリズム
 - [methods/006A_hiderock-gekidan-roster.md](./methods/006A_hiderock-gekidan-roster.md) — 全52役・11系統の観測器台帳
 - [methods/006B_hiderock-gekidan-emoji-legend.md](./methods/006B_hiderock-gekidan-emoji-legend.md) — 全52役＋構造記号の視覚凡例
+- [methods/006C_hideroko-injection-protocol.md](./methods/006C_hideroko-injection-protocol.md) — 🫨ヒデロコ半手動・半自動投入規則
 - [prompts/bonsai-start-prompt.md](./prompts/bonsai-start-prompt.md) — 別部屋・別AI用コピペ
 
 **重要:** BONSAI©️の「劇団」は寸劇の意味ではない。劇団員は、異なる角度を安定して測るための**観測器 / 認知レンズ**として使う。
+
+🫨ヒデロコは完全自動でも完全手動でもない。AIの構造検知によるAUTO投入と、人間側の `ヒデロコ入れて` によるMANUAL投入を両立する。
+
+### 🥋 武術テンプレ法©️を使いたい場合
+
+**初見AIは一番新しい追補だけを単独で読まず、入口から累積構造を理解する。**
+
+- [BUJUTSU_START_HERE.md](./BUJUTSU_START_HERE.md) — 初見向け概念説明とv1.1〜v1.6の読み順
+- [methods/014_bujutsu-template-method.md](./methods/014_bujutsu-template-method.md) — 基礎本体 v1.1
+- v1.2 柔術型 → v1.3 柔道型 → v1.4 太極拳型 → v1.5 空手型 → v1.6 システマ型の正式追補
+- [prompts/bujutsu-start-prompt.md](./prompts/bujutsu-start-prompt.md) — 別部屋・別AI用コピペ
+
+**重要:** 武術テンプレ法©️は「格闘家キャラが議論する方法」ではない。同じ素材を固定し、流派ごとの**作用点・操作・結果**を切り替える比較・診断・修理法。
 
 ---
 
@@ -63,7 +77,13 @@ README.md、METHOD_HOME.md、RECOVERY.md を読み、対象の発明品の正本
 BONSAI©️なら:
 
 ```text
-BONSAI_START_HERE.md を入口にし、006本体・006A全52役台帳・006B絵文字凡例を読んでから実行してください。
+BONSAI_START_HERE.md を入口にし、006本体・006A全52役台帳・006B絵文字凡例・006Cヒデロコ投入規則を読んでから実行してください。
+```
+
+武術テンプレ法©️なら:
+
+```text
+BUJUTSU_START_HERE.md を入口にし、014基礎本体とv1.2〜v1.6正式追補を読んでから実行してください。
 ```
 
 ---
@@ -76,17 +96,27 @@ hiderock-method-os/
 ├── METHOD_HOME.md
 ├── RECOVERY.md
 ├── BONSAI_START_HERE.md
+├── BUJUTSU_START_HERE.md
 ├── methods/
 │   ├── 001_...
 │   ├── ...
 │   ├── 006_hiderock-gekidan-method.md
 │   ├── 006A_hiderock-gekidan-roster.md
 │   ├── 006B_hiderock-gekidan-emoji-legend.md
+│   ├── 006C_hideroko-injection-protocol.md
+│   ├── ...
+│   ├── 014_bujutsu-template-method.md
+│   ├── 014_bujutsu-template-method-v1.2-jutsu-supplement.md
+│   ├── 014_bujutsu-template-method-v1.3-judo-supplement.md
+│   ├── 014_bujutsu-template-method-v1.4-taikyokuken-supplement.md
+│   ├── 014_bujutsu-template-method-v1.5-karate-supplement.md
+│   ├── 014_bujutsu-template-method-v1.6-systema-supplement.md
 │   ├── ...
 │   └── 019_a-method.md
 ├── prompts/
 │   ├── recovery-prompt.md
 │   ├── bonsai-start-prompt.md
+│   ├── bujutsu-start-prompt.md
 │   └── method-registration-prompt.md
 └── docs/
 ```
