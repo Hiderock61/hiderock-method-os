@@ -37,10 +37,29 @@ BONSAI©️は一般的な複数専門家パネルではないため、**初見A
 2. [methods/006_hiderock-gekidan-method.md](./methods/006_hiderock-gekidan-method.md) — v0.5実行アルゴリズム
 3. [methods/006A_hiderock-gekidan-roster.md](./methods/006A_hiderock-gekidan-roster.md) — v0.6全52役台帳
 4. [methods/006B_hiderock-gekidan-emoji-legend.md](./methods/006B_hiderock-gekidan-emoji-legend.md) — v0.4全52役絵文字凡例
+5. [methods/006C_hideroko-injection-protocol.md](./methods/006C_hideroko-injection-protocol.md) — 🫨ヒデロコ半手動・半自動投入規則
 
 別部屋・別AI用のコピペは [prompts/bonsai-start-prompt.md](./prompts/bonsai-start-prompt.md)。
 
 > **BONSAI©️の「劇団員」は寸劇用キャラではなく、安定した観測軸を持つ52種類の観測器。**
+
+🫨ヒデロコは完全自動でも完全手動でもない。AI側が予定調和・前提固定を検知した時のAUTO投入と、人間側が `ヒデロコ入れて` 等と指定するMANUAL投入を両立する。どちらの場合も自動生存ではなく通常の枝生存判定へ送る。
+
+### 🥋 武術テンプレ法©️を使う場合の特別ルート
+
+武術テンプレ法©️は「格闘家キャラが議論する方法」ではなく、**同じ素材を固定し、流派ごとの作用点・操作・結果を切り替える比較・診断・修理法**。
+
+初見AIは一番新しい追補だけを単独で読まず、次の累積構造を入口から確認する。
+
+1. [BUJUTSU_START_HERE.md](./BUJUTSU_START_HERE.md) — 初見向け概念説明、v1.1〜v1.6の読み順、作用点と切替原理
+2. [methods/014_bujutsu-template-method.md](./methods/014_bujutsu-template-method.md) — 基礎本体 v1.1 相撲型・土俵固定
+3. [methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md](./methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md) — 柔術型・情報ポジション
+4. [methods/014_bujutsu-template-method-v1.3-judo-supplement.md](./methods/014_bujutsu-template-method-v1.3-judo-supplement.md) — 柔道型・崩し→作り→掛け
+5. [methods/014_bujutsu-template-method-v1.4-taikyokuken-supplement.md](./methods/014_bujutsu-template-method-v1.4-taikyokuken-supplement.md) — 太極拳型・流派接続
+6. [methods/014_bujutsu-template-method-v1.5-karate-supplement.md](./methods/014_bujutsu-template-method-v1.5-karate-supplement.md) — 空手型・最小起動
+7. [methods/014_bujutsu-template-method-v1.6-systema-supplement.md](./methods/014_bujutsu-template-method-v1.6-systema-supplement.md) — システマ型・常駐観測／流派切替制御
+
+別部屋・別AI用コピペは [prompts/bujutsu-start-prompt.md](./prompts/bujutsu-start-prompt.md)。
 
 ---
 
@@ -116,10 +135,12 @@ BONSAI©️は一般的な複数専門家パネルではないため、**初見A
 - 本体：[methods/006_hiderock-gekidan-method.md](./methods/006_hiderock-gekidan-method.md)
 - 全52役：[methods/006A_hiderock-gekidan-roster.md](./methods/006A_hiderock-gekidan-roster.md)
 - 絵文字凡例：[methods/006B_hiderock-gekidan-emoji-legend.md](./methods/006B_hiderock-gekidan-emoji-legend.md)
+- ヒデロコ投入規則：[methods/006C_hideroko-injection-protocol.md](./methods/006C_hideroko-injection-protocol.md)
 - 別AI用プロンプト：[prompts/bonsai-start-prompt.md](./prompts/bonsai-start-prompt.md)
 - 目的：一つの更新トリガーへ異なる観測器を同時発火させ、生存枝を次の発火源へ送って再分岐する。
 - 重要：**52役 = 52人会議ではなく52種類の観測器。** 全員を順番に喋らせない。
 - 重要回路：`🟢物理的には可能くん ↔ 🧱障害物ちゃん → 🔩秋葉原くん → 🕰️時代くん`
+- ヒデロコ：`AUTO = AIが構造的収束を検知して投入候補 / MANUAL = 人間が任意の瞬間に投入候補を指定 / どちらも自動生存なし`
 - 合図：`これ、BONSAI©️で。`
 
 ### 007｜明智工務店施工依頼書法©️｜🤖 AI方法©️
@@ -153,9 +174,17 @@ BONSAI©️は一般的な複数専門家パネルではないため、**初見A
 - 目的：出来事を物理・制度・体感・他者認識・時間等の複数レイヤーへ接続する。
 
 ### 014｜🥋武術テンプレ法©️ v1.6｜🤖 AI方法©️
+- 初見入口：[BUJUTSU_START_HERE.md](./BUJUTSU_START_HERE.md)
 - 基礎本体：[methods/014_bujutsu-template-method.md](./methods/014_bujutsu-template-method.md)
-- 追補：v1.2柔術 / v1.3柔道 / v1.4太極拳 / v1.5空手 / v1.6システマ
+- v1.2：[methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md](./methods/014_bujutsu-template-method-v1.2-jutsu-supplement.md)
+- v1.3：[methods/014_bujutsu-template-method-v1.3-judo-supplement.md](./methods/014_bujutsu-template-method-v1.3-judo-supplement.md)
+- v1.4：[methods/014_bujutsu-template-method-v1.4-taikyokuken-supplement.md](./methods/014_bujutsu-template-method-v1.4-taikyokuken-supplement.md)
+- v1.5：[methods/014_bujutsu-template-method-v1.5-karate-supplement.md](./methods/014_bujutsu-template-method-v1.5-karate-supplement.md)
+- v1.6：[methods/014_bujutsu-template-method-v1.6-systema-supplement.md](./methods/014_bujutsu-template-method-v1.6-systema-supplement.md)
+- 別AI用プロンプト：[prompts/bujutsu-start-prompt.md](./prompts/bujutsu-start-prompt.md)
 - 目的：同一素材へ異なる作用原理を当て、制作・分析・修理を切り替える。
+- 最重要：流派名はキャラクターではなく、`作用点 + 操作 + 結果` を識別する変換ラベル。最新版v1.6はv1.1〜v1.6の累積仕様として読む。
+- 合図：`武術テンプレ©️。今どの流派？ 続行か交代か見て。`
 
 ### 015｜ヤスリ施工©️ v1.0｜🤝 協働方法©️
 - ファイル：[methods/015_yasuri-sekou-method.md](./methods/015_yasuri-sekou-method.md)
@@ -193,6 +222,7 @@ BONSAI©️は一般的な複数専門家パネルではないため、**初見A
 
 - [prompts/recovery-prompt.md](./prompts/recovery-prompt.md)
 - [prompts/bonsai-start-prompt.md](./prompts/bonsai-start-prompt.md)
+- [prompts/bujutsu-start-prompt.md](./prompts/bujutsu-start-prompt.md)
 - [prompts/method-registration-prompt.md](./prompts/method-registration-prompt.md)
 
 ---
