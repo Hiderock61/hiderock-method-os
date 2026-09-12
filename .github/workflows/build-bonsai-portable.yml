@@ -1,0 +1,79 @@
+name: Build BONSaY Portable
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'BONSAI_START_HERE.md'
+      - 'methods/006_hiderock-gekidan-method.md'
+      - 'methods/006A_hiderock-gekidan-roster.md'
+      - 'methods/006B_hiderock-gekidan-emoji-legend.md'
+      - 'methods/006C_hideroko-injection-protocol.md'
+      - '.github/workflows/build-bonsai-portable.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build portable snapshot
+        shell: bash
+        run: |
+          cat > BONSAI_PORTABLE_v0.5.md <<'EOF'
+          # BONSAI_PORTABLE_v0.5.md｜GitHub非対応AI向け単一ファイル版
+
+          生成方式: GitHub Actionsによる正本ファイルの機械連結
+          Portable作成日: 2026-09-13
+
+          > **重要: このファイルは正本ではありません。**
+          > BONSaY v0.5正本系を、GitHubを直接参照できないAIへ渡すためのスナップショットです。
+          > 正本は `Hiderock61/hiderock-method-os` の各原典ファイルです。差異がある場合は正本を優先します。
+          > このPortableへ直接仕様変更を書き込まず、原典を更新してから再生成してください。
+
+          ## 含まれる原典
+          1. `BONSAI_START_HERE.md`
+          2. `methods/006_hiderock-gekidan-method.md`
+          3. `methods/006A_hiderock-gekidan-roster.md`
+          4. `methods/006B_hiderock-gekidan-emoji-legend.md`
+          5. `methods/006C_hideroko-injection-protocol.md`
+
+          ## AIへの読み方
+          このファイル全体を読み、各 `SOURCE FILE` 区切りを元ファイルとして扱ってください。
+          START_HEREの指示に従い、006を実行仕様、006Aを配役母集団、006Bを視覚UI、006Cをヒデロコ投入規則として優先してください。
+          実験用overlayはこのPortableには含まれません。
+
+          ---
+          EOF
+
+          append_file () {
+            local path="$1"
+            {
+              printf '\n\n---\n\n# SOURCE FILE: `%s`\n\n' "$path"
+              cat "$path"
+            } >> BONSAI_PORTABLE_v0.5.md
+          }
+
+          append_file 'BONSAI_START_HERE.md'
+          append_file 'methods/006_hiderock-gekidan-method.md'
+          append_file 'methods/006A_hiderock-gekidan-roster.md'
+          append_file 'methods/006B_hiderock-gekidan-emoji-legend.md'
+          append_file 'methods/006C_hideroko-injection-protocol.md'
+
+      - name: Commit portable snapshot
+        shell: bash
+        run: |
+          if git diff --quiet -- BONSAI_PORTABLE_v0.5.md && git ls-files --error-unmatch BONSAI_PORTABLE_v0.5.md >/dev/null 2>&1; then
+            echo 'Portable is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add BONSAI_PORTABLE_v0.5.md
+          git commit -m 'Build BONSaY portable v0.5 snapshot'
+          git push
