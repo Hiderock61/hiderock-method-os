@@ -65,6 +65,14 @@ jobs:
           append_file 'methods/006B_hiderock-gekidan-emoji-legend.md'
           append_file 'methods/006C_hideroko-injection-protocol.md'
 
+      - name: Upload portable artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BONSAI_PORTABLE_v0.5
+          path: BONSAI_PORTABLE_v0.5.md
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Commit portable snapshot
         shell: bash
         run: |
