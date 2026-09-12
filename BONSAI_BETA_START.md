@@ -51,7 +51,11 @@ BONSAI©️は、固定された専門家を順番に喋らせる方式ではあ
 
 ## 2｜5分で起動する
 
-### Step 1
+### Step 1｜AIにBONSAI©️ v0.5正本系を読ませる
+
+使うAIのGitHubアクセス可否で、入口を分けます。
+
+#### A｜GitHubを直接読めるAI
 
 まず、以下の入口ファイルをAIへ読ませてください。
 
@@ -63,6 +67,26 @@ BONSAI©️は、固定された専門家を順番に喋らせる方式ではあ
 2. [methods/006A_hiderock-gekidan-roster.md](./methods/006A_hiderock-gekidan-roster.md)
 3. [methods/006B_hiderock-gekidan-emoji-legend.md](./methods/006B_hiderock-gekidan-emoji-legend.md)
 4. [methods/006C_hideroko-injection-protocol.md](./methods/006C_hideroko-injection-protocol.md)
+
+#### B｜GitHubを直接読めないAI
+
+GitHub閲覧を何度も試さず、以下の単一ファイル版を端末へ保存し、そのファイル自体をAIへアップロードしてください。
+
+- [BONSAI_PORTABLE_v0.5.md｜GitHub非対応AI向け単一ファイル版](./BONSAI_PORTABLE_v0.5.md)
+
+`BONSAI_PORTABLE_v0.5.md` は、START_HERE＋必須4ファイルをGitHub Actionsで機械的に連結したスナップショットです。
+
+**Portableは正本ではありません。** 正本はGitHub上の原典5ファイルで、PortableはGitHubへ直接アクセスできないAIへの配送用です。
+
+GitHubへアクセスできないこと自体は、BONSAI©️本体の故障とは数えません。
+
+```text
+GitHub取得失敗
+→ 配送層：×
+→ BONSAI本体：未判定
+```
+
+Portableをアップロードした後に起動できなかった場合、そこで初めてBONSAI本体またはPortable読解の故障として記録します。
 
 ### Step 2
 
@@ -188,7 +212,10 @@ BONSAI©️を第三者が本当に使える形へ直すための公開実験で
 
 ## 7｜対象AI
 
-現時点では、GitHub上のMarkdownを読み込めるAIを想定しています。
+現時点では、次のどちらかができるAIを対象にします。
+
+- GitHub上のMarkdownを直接読める
+- Markdownファイルをアップロードして読める
 
 例:
 
@@ -198,7 +225,9 @@ BONSAI©️を第三者が本当に使える形へ直すための公開実験で
 - Copilot
 - その他、同等の読み込みが可能なAI
 
-AIによって再現度が違っても、それ自体がβデータです。
+AIによってGitHubアクセス可否や再現度が違っても、それ自体がβデータです。
+
+ただし、**GitHub取得の可否とBONSAI構造の再現可否は別項目として扱います。**
 
 ---
 
@@ -208,6 +237,7 @@ AIによって再現度が違っても、それ自体がβデータです。
 - 対象BONSAI©️: v0.5 正本系
 - 公開入口: このファイル
 - 実行正本入口: [BONSAI_START_HERE.md](./BONSAI_START_HERE.md)
+- GitHub非対応AI向け配送版: [BONSAI_PORTABLE_v0.5.md](./BONSAI_PORTABLE_v0.5.md)
 
 第一βでは、実験中のランタイム候補や未確定オーバーレイを混ぜず、まずv0.5正本系の再現性を確認します。
 
