@@ -1,0 +1,102 @@
+name: 006A data bridge
+
+on:
+  push:
+    branches:
+      - 006a-bridge
+    paths:
+      - .github/workflows/006a-bridge.yml
+
+permissions:
+  contents: read
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch exact USDJPY blob
+        env:
+          EXPECTED_BLOB: 089c1944988f12207febc92f830582b176d6686a
+        run: |
+          set -euo pipefail
+          curl -L --fail --silent --show-error \
+            -H 'Accept: application/vnd.github.raw+json' \
+            "https://api.github.com/repos/getdata-finance/usdjpy-5m-ohlcv-forex-historical-data/git/blobs/${EXPECTED_BLOB}" \
+            -o USDJPY_5m.csv
+
+      - name: Verify, extract frozen holdout, and hash
+        env:
+          EXPECTED_BLOB: 089c1944988f12207febc92f830582b176d6686a
+          EXPECTED_SIZE: '3651360'
+          CUTOFF: '2026-08-01T00:00:00+00:00'
+          EXPECTED_ROWS: '8627'
+          EXPECTED_FIRST: '2026-08-02T21:00:00+00:00'
+          EXPECTED_LAST: '2026-09-11T20:55:00+00:00'
+        run: |
+          python - <<'PY'
+          import csv, hashlib, json, os
+          from pathlib import Path
+
+          src = Path('USDJPY_5m.csv')
+          out = Path('USDJPY_5m_external_20260802T2100Z_20260911T2055Z.csv')
+          manifest = Path('006A_materialization_manifest.json')
+
+          data = src.read_bytes()
+          size = len(data)
+          git_blob_sha = hashlib.sha1(f'blob {size}\0'.encode() + data).hexdigest()
+          assert size == int(os.environ['EXPECTED_SIZE']), (size, os.environ['EXPECTED_SIZE'])
+          assert git_blob_sha == os.environ['EXPECTED_BLOB'], (git_blob_sha, os.environ['EXPECTED_BLOB'])
+
+          with src.open('r', encoding='utf-8', newline='') as f:
+              reader = csv.DictReader(f)
+              assert reader.fieldnames == ['datetime', 'open', 'high', 'low', 'close', 'volume'], reader.fieldnames
+              rows = list(reader)
+
+          cutoff = os.environ['CUTOFF']
+          holdout = [r for r in rows if r['datetime'] >= cutoff]
+          assert len(holdout) == int(os.environ['EXPECTED_ROWS']), len(holdout)
+          assert holdout[0]['datetime'] == os.environ['EXPECTED_FIRST'], holdout[0]['datetime']
+          assert holdout[-1]['datetime'] == os.environ['EXPECTED_LAST'], holdout[-1]['datetime']
+          dts = [r['datetime'] for r in holdout]
+          assert len(dts) == len(set(dts)), 'duplicate datetime found'
+          assert dts == sorted(dts), 'datetime order is not ascending'
+          assert all(all(v not in (None, '') for v in r.values()) for r in holdout), 'missing cell found'
+
+          with out.open('w', encoding='utf-8', newline='') as f:
+              writer = csv.DictWriter(f, fieldnames=['datetime', 'open', 'high', 'low', 'close', 'volume'], lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(holdout)
+
+          source_sha256 = hashlib.sha256(data).hexdigest()
+          output_sha256 = hashlib.sha256(out.read_bytes()).hexdigest()
+          payload = {
+              'source_repository': 'getdata-finance/usdjpy-5m-ohlcv-forex-historical-data',
+              'source_file': 'USDJPY_5m.csv',
+              'source_size_bytes': size,
+              'source_git_blob_sha': git_blob_sha,
+              'source_sha256': source_sha256,
+              'filter': f"datetime >= {cutoff}",
+              'output_file': out.name,
+              'output_rows': len(holdout),
+              'first_datetime': holdout[0]['datetime'],
+              'last_datetime': holdout[-1]['datetime'],
+              'duplicate_datetime': 0,
+              'missing_cells': 0,
+              'sort_order': 'ascending',
+              'output_sha256': output_sha256,
+              'status': 'MATERIALIZED_AND_ASSERTED'
+          }
+          manifest.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps(payload, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Upload 006A artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 006A-usdjpy-holdout
+          path: |
+            USDJPY_5m.csv
+            USDJPY_5m_external_20260802T2100Z_20260911T2055Z.csv
+            006A_materialization_manifest.json
+          if-no-files-found: error
+          retention-days: 7
