@@ -328,6 +328,15 @@ API accessが使える状態になったら再実行する。
 - Reopen when at least one App exists
 - Planned route: App metadata → Miro公開・配備面 → reREAD
 
+### R-026｜Hatchable→Miro公開・配備面
+**READY / NO PROJECTS**
+
+- Hatchable list_projects = PROVEN
+- projects = 0
+- Existing-project deployment/function/schema/log READ surfaces are exposed
+- Reopen when at least one Project exists
+- Planned route: Project metadata → Miro公開・配備面 → reREAD
+
 ## HOLD｜現在の接続では未開通
 
 ### H-006｜MotherDuck→Airtableデータ基盤台帳
