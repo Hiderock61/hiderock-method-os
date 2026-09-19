@@ -71,17 +71,36 @@ FigJam = 工程・分岐・循環
 Notion
 ```
 
-- Notion正本READ = PROVEN
-- Xmind生成＋再READ = PROVEN
-- FigJam生成＋再READ = PROVEN
-- 階層 vs 工程の比較 = PROVEN
-
 [実例003 Markdown](./external-capability-automation-example-003.md)
+
+### 004｜Binance→Flourish→Notion｜市場データ可視化｜E2E PROVEN
+
+```text
+Binance
+  ↓
+時系列データREAD
+  ↓
+Flourish
+  ↓
+編集可能ラインチャート
+  ↓
+再READ
+  ↓
+Notion
+```
+
+- BTCUSDT 1h × 24 bars
+- Flourish 24行 upload = PROVEN
+- bindings再設定 = PROVEN
+- line chart固定 = PROVEN
+- 未公開状態確認 = PROVEN
+
+[実例004 Markdown](./external-capability-automation-example-004.md)
 
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-004.md` 以降を追加する。
+`external-capability-automation-example-005.md` 以降を追加する。
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
