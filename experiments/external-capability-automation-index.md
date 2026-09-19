@@ -124,6 +124,18 @@
 Elicit search_papers は `api_access_denied`。
 API accessが使える状態になったら再実行する。
 
+## HOLD｜現在の接続では未開通
+
+### H-001｜Canva→Adobe PDF化
+**HOLD / STORAGE BRIDGE BLOCKED**
+
+- Canva page thumbnail = PROVEN
+- Adobe image→PDF capability = PROVEN
+- Canva external URL→Adobe direct = storage mismatch
+- Adobe upload bridge = connector schema mismatch
+
+Canva export tool露出またはAdobe upload bridge修正後に再試験。
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
