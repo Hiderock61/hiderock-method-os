@@ -96,6 +96,26 @@ Airtable案件台帳
 
 [実例011 Markdown](./external-capability-automation-example-011.md)
 
+### 012｜Google Drive→Airtable制作資料台帳化｜E2E PROVEN
+
+```text
+Google Drive
+  ↓
+制作資料metadata
+  ↓
+Airtable資産台帳
+  ↓
+再READ
+```
+
+- 制作・方法系6件を対象
+- 本文は読まずmetadataのみ使用
+- Airtable「Drive制作資料台帳」を新規作成
+- 6 files → 6 records
+- 6/6再READ一致
+
+[実例012 Markdown](./external-capability-automation-example-012.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -127,10 +147,24 @@ Airtable案件台帳
 Lucid document:
 https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
 
+### R-003｜Dropbox→Airtable資産台帳化
+
+確認済み：
+- Dropbox search = PROVEN
+- folder READ = PROVEN
+
+未実証：
+- 実ファイル→Airtable台帳化
+
+現在札：
+**READY / NO TEST DATA**
+
+対象候補フォルダ直下にファイルが無かったため、実データ待ち。
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-012.md` 以降を追加する。
+`external-capability-automation-example-013.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
