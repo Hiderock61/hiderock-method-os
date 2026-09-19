@@ -137,6 +137,25 @@ Trelloカンバン
 
 [実例013 Markdown](./external-capability-automation-example-013.md)
 
+### 014｜Airtable案件DB→Trello→Linear課題化｜E2E PROVEN（テストデータ）
+
+```text
+Airtable
+  ↓
+Trello進行カード
+  ↓
+Linear実装Issue
+  ↓
+再READ
+```
+
+- Airtable案件1件をTrelloカード経由でLinearへ昇格
+- HID-12作成
+- 元Trelloカードをリンク添付
+- Linear再READ一致
+
+[実例014 Markdown](./external-capability-automation-example-014.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -211,10 +230,24 @@ HubSpot CONTACT write が REQUIRES_REAUTHORIZATION。
 
 Slack Lists追加認証フローが接続エラー。
 
+### R-006｜Fireflies会議ログ→Airtable実務レコード化
+
+確認済み：
+- Fireflies transcript query = PROVEN
+- mine:true で検索 = PROVEN
+
+未実証：
+- summary / action items → Airtable
+
+現在札：
+**READY / NO TEST DATA**
+
+自分所有の会議ログが0件だったため、実データ待ち。
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-014.md` 以降を追加する。
+`external-capability-automation-example-015.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
