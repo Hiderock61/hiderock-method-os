@@ -71,6 +71,29 @@ Notion案件カード
 
 [実例008 Markdown](./external-capability-automation-example-008.md)
 
+### 009｜Consensus→Xmind研究地図化｜E2E PROVEN
+
+```text
+Consensus
+  ↓
+論文検索＋正式fetch
+  ↓
+主張を構造化
+  ↓
+Xmind研究地図
+  ↓
+再READ
+  ↓
+Notion
+```
+
+- Consensus search / fetch = PROVEN
+- 3論文を研究軸へ構造化
+- Xmind 6枝生成
+- Xmind再READ = PROVEN
+
+[実例009 Markdown](./external-capability-automation-example-009.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -136,7 +159,7 @@ https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-009.md` 以降を追加する。
+`external-capability-automation-example-010.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
