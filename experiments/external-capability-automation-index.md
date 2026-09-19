@@ -103,7 +103,14 @@
 **READY / NO TEST DATA**
 
 ### R-002｜GitHub実例図鑑→Lucid配線図化
-**READY / PARTIAL**
+**READY / RENDER PROVEN / STRUCTURE PARTIAL**
+
+- metadata READ = PROVEN
+- structured fetch = PROVEN
+- Mermaid図は1個の Mermaid Diagram Zero State として保持
+- document text search = 0件
+- PNG export = PROVEN
+- 内部ノード文字列の構造READは未実証
 
 ### R-003｜Dropbox→Airtable資産台帳化
 **READY / NO TEST DATA**
