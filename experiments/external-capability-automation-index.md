@@ -144,6 +144,12 @@ API accessが使える状態になったら再実行する。
 ### R-013｜Granola会議ログ→Notion会議カード
 **READY / NO ACCOUNT**
 
+### R-014｜GitHub Issue→Webflow Draft CMS化
+**READY / NO SITE**
+
+- Webflow list_sites = PROVEN
+- accessible sites = 0
+
 ## HOLD｜現在の接続では未開通
 
 ### H-001｜Canva→Adobe PDF化
@@ -155,6 +161,18 @@ API accessが使える状態になったら再実行する。
 - Adobe upload bridge = connector schema mismatch
 
 Canva export tool露出またはAdobe upload bridge修正後に再試験。
+
+### H-002｜Airtable音楽DB→Apple Musicプレイリスト下書き
+**HOLD / VERSION RESOLUTION MISMATCH**
+
+- Airtable採用版3曲 = PROVEN
+- Apple Music batch matcher = PROVEN
+- exact version match = 1/3
+- Killing In The Name → Demo版へ誤寄り
+- Walk This Way → 7-inch Single版へ誤寄り
+
+監査ルール：
+**版固定プレイリストでは、タイトル＋アーティストだけのbatch matchingを信用しない。**
 
 ## 次
 
