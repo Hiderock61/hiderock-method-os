@@ -209,14 +209,15 @@
 
 [実例054 Markdown](./external-capability-automation-example-054.md)
 
+### 055｜Dropbox→Airtableファイル資産台帳化｜E2E PROVEN
+
+[実例055 Markdown](./external-capability-automation-example-055.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
 **READY / NO TEST DATA**
 
-
-### R-003｜Dropbox→Airtable資産台帳化
-**READY / NO TEST DATA**
 
 ### R-004｜Jotform→HubSpot Contact化
 **READY / AUTH GATE**
@@ -449,7 +450,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-055.md` 以降を追加する。
+`external-capability-automation-example-056.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
