@@ -31,76 +31,40 @@
 ## 実例一覧
 
 ### 001｜本館・公開監査自動化｜E2E PROVEN
-
-```text
-GitHub
-  ↓
-TinyFish ↔ Firecrawl
-  ↓
-正本と公開Webの差分判定
-  ↓
-Notion
-```
-
 [実例001 Markdown](./external-capability-automation-example-001.md)
 
 ### 002｜Web調査→学術根拠監査→正本化｜E2E PROVEN
-
-```text
-Firecrawl
-  ↓
-Scite
-  ↓
-支持 / 限界の根拠監査
-  ↓
-Notion
-```
-
 [実例002 Markdown](./external-capability-automation-example-002.md)
 
 ### 003｜Notion→Xmind＋FigJam｜同一内容の多視点化｜E2E PROVEN
-
-```text
-Notion
-  ↓
-Xmind = 階層・分類
-FigJam = 工程・分岐・循環
-  ↓
-再READして視点差を比較
-  ↓
-Notion
-```
-
 [実例003 Markdown](./external-capability-automation-example-003.md)
 
 ### 004｜Binance→Flourish→Notion｜市場データ可視化｜E2E PROVEN
+[実例004 Markdown](./external-capability-automation-example-004.md)
+
+### 005｜GitHub仕事受付↔Jotform整合監査｜E2E PROVEN
 
 ```text
-Binance
+GitHub仕事受付ページ
   ↓
-時系列データREAD
+Jotform実フォーム
   ↓
-Flourish
-  ↓
-編集可能ラインチャート
-  ↓
-再READ
+4項目・Form ID・状態を照合
   ↓
 Notion
 ```
 
-- BTCUSDT 1h × 24 bars
-- Flourish 24行 upload = PROVEN
-- bindings再設定 = PROVEN
-- line chart固定 = PROVEN
-- 未公開状態確認 = PROVEN
+- Web側4項目 = Form側4項目と一致
+- CTA Form ID = READしたForm IDと一致
+- Jotform status = ENABLED
+- READ-only監査として完走
 
-[実例004 Markdown](./external-capability-automation-example-004.md)
+[実例005 Markdown](./external-capability-automation-example-005.md)
 
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-005.md` 以降を追加する。
+`external-capability-automation-example-006.md` 以降を追加する。
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
