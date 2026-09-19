@@ -145,6 +145,25 @@ Miro既存テストボード
 
 [実例020 Markdown](./external-capability-automation-example-020.md)
 
+### 021｜Canva→Airtable制作資産台帳化｜E2E PROVEN
+
+```text
+Canva
+  ↓
+既存デザインmetadata
+  ↓
+Airtable制作資産台帳
+  ↓
+再READ
+```
+
+- owned designsから安全対象5件を選別
+- Canva get_designで正式metadata再取得
+- Airtableへ5 records
+- 5/5再READ一致
+
+[実例021 Markdown](./external-capability-automation-example-021.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -177,7 +196,7 @@ Miro既存テストボード
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-021.md` 以降を追加する。
+`external-capability-automation-example-022.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
