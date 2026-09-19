@@ -170,6 +170,14 @@ API accessが使える状態になったら再実行する。
 - explicit approval required before execution
 - personal email / phoneは今回使わない
 
+### R-016｜Shopify商品カタログ→Airtable商品資産台帳
+**READY / NO PRODUCTS**
+
+- Shopify store READ = PROVEN
+- Shopify product search = PROVEN
+- product count = 0
+- 商品が入った時点でAirtable台帳化を再試験
+
 ## HOLD｜現在の接続では未開通
 
 ### H-001｜Canva→Adobe PDF化
