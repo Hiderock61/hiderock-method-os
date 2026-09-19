@@ -97,20 +97,15 @@
 
 [実例026 Markdown](./external-capability-automation-example-026.md)
 
+### 027｜GitHub図鑑→Lucid native mind map→構造再READ｜E2E PROVEN
+
+[実例027 Markdown](./external-capability-automation-example-027.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
 **READY / NO TEST DATA**
 
-### R-002｜GitHub実例図鑑→Lucid配線図化
-**READY / RENDER PROVEN / STRUCTURE PARTIAL**
-
-- metadata READ = PROVEN
-- structured fetch = PROVEN
-- Mermaid図は1個の Mermaid Diagram Zero State として保持
-- document text search = 0件
-- PNG export = PROVEN
-- 内部ノード文字列の構造READは未実証
 
 ### R-003｜Dropbox→Airtable資産台帳化
 **READY / NO TEST DATA**
@@ -160,7 +155,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-027.md` 以降を追加する。
+`external-capability-automation-example-028.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
