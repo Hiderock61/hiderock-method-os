@@ -78,27 +78,28 @@ HOLD / PARTIALでも、**構成能力が確認済みで、実データ待ちだ�
 [実例016 Markdown](./external-capability-automation-example-016.md)
 
 ### 017｜Airtable案件DB→monday.com→Vibe内部アプリ化｜E2E PROVEN（テストデータ）
+[実例017 Markdown](./external-capability-automation-example-017.md)
+
+### 018｜Apple Music→Airtable音楽リファレンス台帳化｜E2E PROVEN
 
 ```text
-Airtable
+Apple Music
   ↓
-monday.com業務ボード
+実在曲metadata
   ↓
-monday Vibe
+版違い監査
   ↓
-内部用トリアージアプリ
+Airtable音楽リファレンス台帳
   ↓
-READY / LIVE
+再READ
 ```
 
-- App ID 10522390
-- Job Triage Board
-- code version 1 = LIVE
-- status = READY
-- is_published = false
-- Vibe ASKで表示項目・フィルタ・外部送信なしを再確認
+- 3曲をApple Music ID付きで登録
+- 3/3再READ一致
+- batch matchingの版違いを検出
+- 監査ルール「曲名一致 ≠ 同じ音源版」を追加
 
-[実例017 Markdown](./external-capability-automation-example-017.md)
+[実例018 Markdown](./external-capability-automation-example-018.md)
 
 ## READY｜実行可能・実データ待ち
 
@@ -132,7 +133,7 @@ READY / LIVE
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-018.md` 以降を追加する。
+`external-capability-automation-example-019.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
