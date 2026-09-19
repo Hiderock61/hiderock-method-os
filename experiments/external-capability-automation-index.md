@@ -176,6 +176,26 @@ properties / render確認
 
 [実例015 Markdown](./external-capability-automation-example-015.md)
 
+### 016｜Airtable案件DB→monday.com業務ボード化｜E2E PROVEN（テストデータ）
+
+```text
+Airtable
+  ↓
+案件DB
+  ↓
+monday.com業務ボード
+  ↓
+再READ
+```
+
+- 非公開テストボード作成
+- 5列追加
+- Airtable 3 records → monday 3 items
+- 状態「新規」を保持
+- 3/3再READ一致
+
+[実例016 Markdown](./external-capability-automation-example-016.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -281,10 +301,22 @@ Slack Lists追加認証フローが接続エラー。
 - Supabase list projects = PROVEN
 - projects = 0
 
+### R-009｜Notion→WordPress Draft化
+
+現在札：
+**READY / NO SITE**
+
+- WordPress.com connector = PROVEN
+- user sites list = PROVEN
+- accessible sites = 0
+
+サイトが存在した時点で、
+Notion正本 → Draft記事 → 再READ を再実行する。
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-016.md` 以降を追加する。
+`external-capability-automation-example-017.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
