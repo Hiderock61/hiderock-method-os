@@ -56,20 +56,32 @@ Scite
 Notion
 ```
 
-試験テーマ：RAGとLLMハルシネーション。
-
-- Firecrawl web / research search = PROVEN
-- Scite literature / citation context / excerpt = PROVEN
-- 支持側と限界側の二方向監査 = PROVEN
-- Notion正本化 = PROVEN
-- Tavilyは今回不使用 / 接続失敗HOLD
-
 [実例002 Markdown](./external-capability-automation-example-002.md)
+
+### 003｜Notion→Xmind＋FigJam｜同一内容の多視点化｜E2E PROVEN
+
+```text
+Notion
+  ↓
+Xmind = 階層・分類
+FigJam = 工程・分岐・循環
+  ↓
+再READして視点差を比較
+  ↓
+Notion
+```
+
+- Notion正本READ = PROVEN
+- Xmind生成＋再READ = PROVEN
+- FigJam生成＋再READ = PROVEN
+- 階層 vs 工程の比較 = PROVEN
+
+[実例003 Markdown](./external-capability-automation-example-003.md)
 
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-003.md` 以降を追加する。
+`external-capability-automation-example-004.md` 以降を追加する。
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
