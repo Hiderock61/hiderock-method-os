@@ -355,6 +355,19 @@ API accessが使える状態になったら再実行する。
 - Do not conclude non-delivery from this alone
 - Reopen when notification configuration or a fresh receipt is available
 
+### R-028｜GitHub正本→Coda成功実例台帳001〜051
+**READY / PARTIAL / CODA WEEKLY LIMIT**
+
+- GitHub canonical success headings 001–051 = 51/51 confirmed
+- Coda table created: 自動化実例一覧｜PROVEN 001〜051
+- Table ID = grid-kAu4SQ748o
+- Initial strict parser inserted 43 rows
+- Missing 8 identified: 008, 011, 013, 014, 016, 017, 028, 029
+- Cause = headings ending with E2E PROVEN（テストデータ）
+- Corrected parser finds all 51
+- Append + final reREAD blocked by Coda weekly 30 MCP request limit
+- Resume after quota reset; no upgrade action taken
+
 ## HOLD｜現在の接続では未開通
 
 ### H-006｜MotherDuck→Airtableデータ基盤台帳
