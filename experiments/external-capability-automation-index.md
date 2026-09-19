@@ -48,28 +48,28 @@ HOLD / PARTIALでも、**構成能力が確認済みで、実データ待ちだ�
 [実例006 Markdown](./external-capability-automation-example-006.md)
 
 ### 007｜GitHub図鑑→Coda台帳化｜E2E PROVEN
+[実例007 Markdown](./external-capability-automation-example-007.md)
+
+### 008｜Jotform相談→Notion案件カード化｜E2E PROVEN（テストデータ）
 
 ```text
-GitHub INDEX
+Jotform
   ↓
-1実例 = 1行へ構造化
+送信内容READ
   ↓
-Coda
+1件ずつ構造化
   ↓
-6行台帳
+Notion案件カード
   ↓
 再READ
-  ↓
-Notion
 ```
 
-- Coda document create = PROVEN
-- Coda table create = PROVEN
-- 6 rows insert = PROVEN
-- Coda再READ = PROVEN
-- 6/6 rows一致 = PROVEN
+- 既存テスト送信3件
+- Notion案件カード3件作成
+- 3/3再READ一致
+- 返信・案件受諾など外部アクションは含めない
 
-[実例007 Markdown](./external-capability-automation-example-007.md)
+[実例008 Markdown](./external-capability-automation-example-008.md)
 
 ## READY｜実行可能・実データ待ち
 
@@ -99,8 +99,7 @@ Notion
 現在札：
 **READY / NO TEST DATA**
 
-実際の予約・面談・診察・訪問などのメールと比較対象Calendar予定が揃ったら再実行し、通れば正式な実例008へ昇格する。
-
+実予定メールと比較対象Calendar予定が揃ったら再実行し、通ればその時点の次の空き成功番号へ昇格する。
 
 ### R-002｜GitHub実例図鑑→Lucid配線図化
 
@@ -137,7 +136,7 @@ https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-008.md` 以降を追加する。
+`external-capability-automation-example-009.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
