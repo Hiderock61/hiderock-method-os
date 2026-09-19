@@ -156,6 +156,26 @@ Linear実装Issue
 
 [実例014 Markdown](./external-capability-automation-example-014.md)
 
+### 015｜Google Drive資産→Adobe PDFカタログ化｜E2E PROVEN
+
+```text
+Google Drive
+  ↓
+制作資料metadata
+  ↓
+Adobe PDF
+  ↓
+properties / render確認
+```
+
+- Drive側6資料を再READ
+- Adobeで2ページPDF生成
+- PDF properties再READ
+- PDF→PNG render処理成功
+- 独立目視監査のみPARTIAL
+
+[実例015 Markdown](./external-capability-automation-example-015.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -244,10 +264,27 @@ Slack Lists追加認証フローが接続エラー。
 
 自分所有の会議ログが0件だったため、実データ待ち。
 
+### R-007｜GitHub→Netlify/Vercelデプロイ監査
+
+現在札：
+**READY / NO DEPLOYMENT DATA**
+
+- Vercel teams = 0
+- Netlify team = 1
+- Netlify projects = 0
+
+### R-008｜Airtable→SupabaseバックエンドDB化
+
+現在札：
+**READY / NO PROJECT**
+
+- Supabase list projects = PROVEN
+- projects = 0
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-015.md` 以降を追加する。
+`external-capability-automation-example-016.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
