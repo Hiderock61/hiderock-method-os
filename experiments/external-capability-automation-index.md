@@ -85,6 +85,10 @@
 ### 023｜SciSpace→Scite→Miro研究マトリクス｜E2E PROVEN
 [実例023 Markdown](./external-capability-automation-example-023.md)
 
+### 024｜Exa→Firecrawl→Miro AIプロトタイピング実例比較｜E2E PROVEN
+
+[実例024 Markdown](./external-capability-automation-example-024.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -123,7 +127,7 @@ API accessが使える状態になったら再実行する。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-024.md` 以降を追加する。
+`external-capability-automation-example-025.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
