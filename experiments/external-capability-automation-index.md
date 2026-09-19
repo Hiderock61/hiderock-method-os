@@ -57,284 +57,82 @@ HOLD / PARTIALでも、**構成能力が確認済みで、実データ待ちだ�
 [実例009 Markdown](./external-capability-automation-example-009.md)
 
 ### 010｜Podcast App→Notion研究棚化｜E2E PROVEN
-
-```text
-Podcast App
-  ↓
-テーマ検索
-  ↓
-観測軸付きで選別
-  ↓
-Notion研究カード
-  ↓
-再READ
-```
-
-- 5エピソードを研究カード化
-- 5/5再READ一致
-- カタログ説明は番組メタデータとして扱う
-
 [実例010 Markdown](./external-capability-automation-example-010.md)
 
 ### 011｜Jotform相談→Airtable案件台帳化｜E2E PROVEN（テストデータ）
-
-```text
-Jotform
-  ↓
-相談送信READ
-  ↓
-Airtable案件台帳
-  ↓
-再READ
-```
-
-- 実機試験用Airtable Baseを使用
-- 仕事相談案件テーブルを新規作成
-- Jotformテスト送信3件 → Airtable 3 records
-- 3/3再READ一致
-- 運用DBとして「新規」状態を保持
-
 [実例011 Markdown](./external-capability-automation-example-011.md)
 
 ### 012｜Google Drive→Airtable制作資料台帳化｜E2E PROVEN
-
-```text
-Google Drive
-  ↓
-制作資料metadata
-  ↓
-Airtable資産台帳
-  ↓
-再READ
-```
-
-- 制作・方法系6件を対象
-- 本文は読まずmetadataのみ使用
-- Airtable「Drive制作資料台帳」を新規作成
-- 6 files → 6 records
-- 6/6再READ一致
-
 [実例012 Markdown](./external-capability-automation-example-012.md)
 
 ### 013｜Airtable案件DB→Trello作業ボード化｜E2E PROVEN（テストデータ）
-
-```text
-Airtable
-  ↓
-案件DB
-  ↓
-Trelloカンバン
-  ↓
-新規 / 確認中 / 完了
-  ↓
-再READ
-```
-
-- 非公開テストボード作成
-- 3 lists作成
-- Airtable 3 records → Trello 3 cards
-- 3/3再READ一致
-
 [実例013 Markdown](./external-capability-automation-example-013.md)
 
 ### 014｜Airtable案件DB→Trello→Linear課題化｜E2E PROVEN（テストデータ）
-
-```text
-Airtable
-  ↓
-Trello進行カード
-  ↓
-Linear実装Issue
-  ↓
-再READ
-```
-
-- Airtable案件1件をTrelloカード経由でLinearへ昇格
-- HID-12作成
-- 元Trelloカードをリンク添付
-- Linear再READ一致
-
 [実例014 Markdown](./external-capability-automation-example-014.md)
 
 ### 015｜Google Drive資産→Adobe PDFカタログ化｜E2E PROVEN
-
-```text
-Google Drive
-  ↓
-制作資料metadata
-  ↓
-Adobe PDF
-  ↓
-properties / render確認
-```
-
-- Drive側6資料を再READ
-- Adobeで2ページPDF生成
-- PDF properties再READ
-- PDF→PNG render処理成功
-- 独立目視監査のみPARTIAL
-
 [実例015 Markdown](./external-capability-automation-example-015.md)
 
 ### 016｜Airtable案件DB→monday.com業務ボード化｜E2E PROVEN（テストデータ）
+[実例016 Markdown](./external-capability-automation-example-016.md)
+
+### 017｜Airtable案件DB→monday.com→Vibe内部アプリ化｜E2E PROVEN（テストデータ）
 
 ```text
 Airtable
   ↓
-案件DB
-  ↓
 monday.com業務ボード
   ↓
-再READ
+monday Vibe
+  ↓
+内部用トリアージアプリ
+  ↓
+READY / LIVE
 ```
 
-- 非公開テストボード作成
-- 5列追加
-- Airtable 3 records → monday 3 items
-- 状態「新規」を保持
-- 3/3再READ一致
+- App ID 10522390
+- Job Triage Board
+- code version 1 = LIVE
+- status = READY
+- is_published = false
+- Vibe ASKで表示項目・フィルタ・外部送信なしを再確認
 
-[実例016 Markdown](./external-capability-automation-example-016.md)
+[実例017 Markdown](./external-capability-automation-example-017.md)
 
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
-
-確認済み：
-- Gmail search = PROVEN
-- Gmail絞り込み = PROVEN
-- Google Calendar一覧READ = PROVEN
-- Calendar期間検索 = PROVEN
-
-未実証：
-- 実予定メールとCalendar予定のE2E照合
-
-現在札：
 **READY / NO TEST DATA**
 
 ### R-002｜GitHub実例図鑑→Lucid配線図化
-
-確認済み：
-- GitHub INDEX READ = PROVEN
-- Mermaid構造生成 = PROVEN
-- Lucidchart document create = PROVEN
-- Lucid metadata READ = PROVEN
-- Lucid document fetch = PROVEN
-
-現在札：
 **READY / PARTIAL**
 
-Lucid document:
-https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
-
 ### R-003｜Dropbox→Airtable資産台帳化
-
-確認済み：
-- Dropbox search = PROVEN
-- folder READ = PROVEN
-
-未実証：
-- 実ファイル→Airtable台帳化
-
-現在札：
 **READY / NO TEST DATA**
-
-対象候補フォルダ直下にファイルが無かったため、実データ待ち。
 
 ### R-004｜Jotform→HubSpot Contact化
-
-確認済み：
-- CONTACT read = AVAILABLE
-- test@example.com検索 = 0件
-
-未実証：
-- CONTACT create
-
-現在札：
 **READY / AUTH GATE**
-
-HubSpot CONTACT write が REQUIRES_REAUTHORIZATION。
 
 ### R-005｜Airtable→Slack List作業面化
-
-確認済み：
-- Slack channel READ = PROVEN
-- Slack public search = PROVEN
-- ChatGPT側Slack permission = Allow all actions
-
-未実証：
-- Slack List create
-
-現在札：
 **READY / AUTH GATE**
 
-Slack Lists追加認証フローが接続エラー。
-
 ### R-006｜Fireflies会議ログ→Airtable実務レコード化
-
-確認済み：
-- Fireflies transcript query = PROVEN
-- mine:true で検索 = PROVEN
-
-未実証：
-- summary / action items → Airtable
-
-現在札：
 **READY / NO TEST DATA**
 
-自分所有の会議ログが0件だったため、実データ待ち。
-
 ### R-007｜GitHub→Netlify/Vercelデプロイ監査
-
-現在札：
 **READY / NO DEPLOYMENT DATA**
 
-- Vercel teams = 0
-- Netlify team = 1
-- Netlify projects = 0
-
 ### R-008｜Airtable→SupabaseバックエンドDB化
-
-現在札：
 **READY / NO PROJECT**
 
-- Supabase list projects = PROVEN
-- projects = 0
-
 ### R-009｜Notion→WordPress Draft化
-
-現在札：
 **READY / NO SITE**
-
-- WordPress.com connector = PROVEN
-- user sites list = PROVEN
-- accessible sites = 0
-
-サイトが存在した時点で、
-Notion正本 → Draft記事 → 再READ を再実行する。
-
-### R-010｜Airtable案件DB→monday.com→Vibe内部アプリ化
-
-現在札：
-**READY / PROCESSING**
-
-- monday Vibe app ID = 10522390
-- name = Job Triage Board
-- board_view
-- is_published = false
-- status = PROCESSING_MESSAGE
-- code_versions = 0
-
-完成後にvibe_getで再READし、
-通れば次の成功番号へ昇格する。
-
-Editor:
-https://akechikuncoms-team.monday.com/vibe/app/10522390
 
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-017.md` 以降を追加する。
+`external-capability-automation-example-018.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
