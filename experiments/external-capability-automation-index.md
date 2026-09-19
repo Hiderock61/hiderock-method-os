@@ -129,6 +129,10 @@
 
 [実例034 Markdown](./external-capability-automation-example-034.md)
 
+### 035｜Higgsfield動画モデルカタログ→Airtable動画生成モデル台帳｜E2E PROVEN
+
+[実例035 Markdown](./external-capability-automation-example-035.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -216,6 +220,14 @@ API accessが使える状態になったら再実行する。
 - projects = 0
 - Project作成後にcluster metadata→Airtable台帳化を再試験
 
+### R-020｜HeyGen→Airtableメディア制作資産台帳
+**READY / NO ASSETS**
+
+- HeyGen video list READ = PROVEN
+- videos = 0
+- private avatar groups = 0
+- 資産が入った時点でAirtableメディア制作資産台帳へ再試験
+
 ## HOLD｜現在の接続では未開通
 
 ### H-004｜AWS Data Analytics
@@ -262,7 +274,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-035.md` 以降を追加する。
+`external-capability-automation-example-036.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
