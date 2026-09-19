@@ -124,6 +124,27 @@ Airtable更新
 
 [実例019 Markdown](./external-capability-automation-example-019.md)
 
+### 020｜GitHub成功図鑑→Miro配線俯瞰表｜E2E PROVEN
+
+```text
+GitHub INDEX
+  ↓
+001〜019抽出
+  ↓
+Miro既存テストボード
+  ↓
+19行の俯瞰表
+  ↓
+再READ
+```
+
+- Miro実機試験ボードへ表を作成
+- 001〜019を19行で投入
+- 19/19再READ一致
+- 雪だるま系譜マップはREAD可 / WRITE不可を確認
+
+[実例020 Markdown](./external-capability-automation-example-020.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -156,7 +177,7 @@ Airtable更新
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-020.md` 以降を追加する。
+`external-capability-automation-example-021.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
