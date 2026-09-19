@@ -51,64 +51,34 @@ HOLD / PARTIALでも、**構成能力が確認済みで、実データ待ちだ�
 [実例007 Markdown](./external-capability-automation-example-007.md)
 
 ### 008｜Jotform相談→Notion案件カード化｜E2E PROVEN（テストデータ）
-
-```text
-Jotform
-  ↓
-送信内容READ
-  ↓
-1件ずつ構造化
-  ↓
-Notion案件カード
-  ↓
-再READ
-```
-
-- 既存テスト送信3件
-- Notion案件カード3件作成
-- 3/3再READ一致
-- 返信・案件受諾など外部アクションは含めない
-
 [実例008 Markdown](./external-capability-automation-example-008.md)
 
 ### 009｜Consensus→Xmind研究地図化｜E2E PROVEN
+[実例009 Markdown](./external-capability-automation-example-009.md)
+
+### 010｜Podcast App→Notion研究棚化｜E2E PROVEN
 
 ```text
-Consensus
+Podcast App
   ↓
-論文検索＋正式fetch
+テーマ検索
   ↓
-主張を構造化
+観測軸付きで選別
   ↓
-Xmind研究地図
+Notion研究カード
   ↓
 再READ
-  ↓
-Notion
 ```
 
-- Consensus search / fetch = PROVEN
-- 3論文を研究軸へ構造化
-- Xmind 6枝生成
-- Xmind再READ = PROVEN
+- 5エピソードを研究カード化
+- 5/5再READ一致
+- カタログ説明は番組メタデータとして扱う
 
-[実例009 Markdown](./external-capability-automation-example-009.md)
+[実例010 Markdown](./external-capability-automation-example-010.md)
 
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
-
-```text
-Gmail
-  ↓
-予定候補抽出
-  ↓
-Google Calendar
-  ↓
-登録済み / 未登録 / 判断不能
-  ↓
-Notion
-```
 
 確認済み：
 - Gmail search = PROVEN
@@ -122,19 +92,7 @@ Notion
 現在札：
 **READY / NO TEST DATA**
 
-実予定メールと比較対象Calendar予定が揃ったら再実行し、通ればその時点の次の空き成功番号へ昇格する。
-
 ### R-002｜GitHub実例図鑑→Lucid配線図化
-
-```text
-GitHub INDEX
-  ↓
-Mermaidへ構造化
-  ↓
-Lucidchart
-  ↓
-配線図
-```
 
 確認済み：
 - GitHub INDEX READ = PROVEN
@@ -143,15 +101,8 @@ Lucidchart
 - Lucid metadata READ = PROVEN
 - Lucid document fetch = PROVEN
 
-現在の制約：
-- Mermaid図がLucid側では1つの埋め込み図ブロックとして返る
-- 内部ノード文字をLucid自身から再READできない
-- document searchでも 001 / GitHub / Notion / 007 はヒットしない
-
 現在札：
 **READY / PARTIAL**
-
-Lucid側でMermaid内部ノードを構造READできる手段が露出したら再監査する。
 
 Lucid document:
 https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
@@ -159,7 +110,7 @@ https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-010.md` 以降を追加する。
+`external-capability-automation-example-011.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
