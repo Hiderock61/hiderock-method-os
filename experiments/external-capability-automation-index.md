@@ -125,6 +125,10 @@
 
 [実例033 Markdown](./external-capability-automation-example-033.md)
 
+### 034｜Slack Channel metadata→Airtableコミュニケーション台帳｜E2E PROVEN
+
+[実例034 Markdown](./external-capability-automation-example-034.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -258,7 +262,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-034.md` 以降を追加する。
+`external-capability-automation-example-035.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
