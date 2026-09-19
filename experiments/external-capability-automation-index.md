@@ -214,6 +214,15 @@ API accessが使える状態になったら再実行する。
 
 ## HOLD｜現在の接続では未開通
 
+### H-004｜AWS Data Analytics
+**HOLD / USER PASS**
+
+- loginがうまく通らない
+- 「6ヶ月間無料」表示があり、その先の課金条件が不明
+- 料金体系は未確認なので有料とは断定しない
+- 本人が再開を明示した時のみ再試験
+
+
 ### H-003｜ClickHouse Cloud→Airtableデータ基盤台帳
 **HOLD / SERVICE MCP BLOCKED**
 
