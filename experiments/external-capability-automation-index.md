@@ -116,6 +116,27 @@ Airtable資産台帳
 
 [実例012 Markdown](./external-capability-automation-example-012.md)
 
+### 013｜Airtable案件DB→Trello作業ボード化｜E2E PROVEN（テストデータ）
+
+```text
+Airtable
+  ↓
+案件DB
+  ↓
+Trelloカンバン
+  ↓
+新規 / 確認中 / 完了
+  ↓
+再READ
+```
+
+- 非公開テストボード作成
+- 3 lists作成
+- Airtable 3 records → Trello 3 cards
+- 3/3再READ一致
+
+[実例013 Markdown](./external-capability-automation-example-013.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -161,10 +182,39 @@ https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
 
 対象候補フォルダ直下にファイルが無かったため、実データ待ち。
 
+### R-004｜Jotform→HubSpot Contact化
+
+確認済み：
+- CONTACT read = AVAILABLE
+- test@example.com検索 = 0件
+
+未実証：
+- CONTACT create
+
+現在札：
+**READY / AUTH GATE**
+
+HubSpot CONTACT write が REQUIRES_REAUTHORIZATION。
+
+### R-005｜Airtable→Slack List作業面化
+
+確認済み：
+- Slack channel READ = PROVEN
+- Slack public search = PROVEN
+- ChatGPT側Slack permission = Allow all actions
+
+未実証：
+- Slack List create
+
+現在札：
+**READY / AUTH GATE**
+
+Slack Lists追加認証フローが接続エラー。
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-013.md` 以降を追加する。
+`external-capability-automation-example-014.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
