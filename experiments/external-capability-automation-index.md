@@ -101,6 +101,29 @@ Airtable音楽リファレンス台帳
 
 [実例018 Markdown](./external-capability-automation-example-018.md)
 
+### 019｜Apple Music×Shazam→音源版監査DB｜E2E PROVEN
+
+```text
+Apple Music
+  ↓
+参照曲確定
+  ↓
+Shazam再検索
+  ↓
+版 / ID / ISRC監査
+  ↓
+Airtable更新
+  ↓
+再READ
+```
+
+- 3曲をShazam検索経路で再監査
+- 同一ID / 別ID / 同一ISRC / Demo・Single版の差を確認
+- Airtableへ監査3列追加
+- 3/3再READ一致
+
+[実例019 Markdown](./external-capability-automation-example-019.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -133,7 +156,7 @@ Airtable音楽リファレンス台帳
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-019.md` 以降を追加する。
+`external-capability-automation-example-020.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
