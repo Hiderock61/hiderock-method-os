@@ -43,28 +43,34 @@
 [実例004 Markdown](./external-capability-automation-example-004.md)
 
 ### 005｜GitHub仕事受付↔Jotform整合監査｜E2E PROVEN
+[実例005 Markdown](./external-capability-automation-example-005.md)
+
+### 006｜公開サイト→Xmind導線地図化｜E2E PROVEN
 
 ```text
-GitHub仕事受付ページ
+TinyFish
   ↓
-Jotform実フォーム
+公開ページ本文＋リンク抽出
   ↓
-4項目・Form ID・状態を照合
+Xmind Tree Chart
+  ↓
+再READ
   ↓
 Notion
 ```
 
-- Web側4項目 = Form側4項目と一致
-- CTA Form ID = READしたForm IDと一致
-- Jotform status = ENABLED
-- READ-only監査として完走
+- Firecrawl map = PARTIAL
+- Firecrawl crawl = HOLD / 429
+- TinyFishへ差し替えて完走
+- Xmind上位6枝を生成
+- Xmind再READ = PROVEN
 
-[実例005 Markdown](./external-capability-automation-example-005.md)
+[実例006 Markdown](./external-capability-automation-example-006.md)
 
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-006.md` 以降を追加する。
+`external-capability-automation-example-007.md` 以降を追加する。
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
