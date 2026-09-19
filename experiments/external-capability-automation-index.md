@@ -345,6 +345,16 @@ API accessが使える状態になったら再実行する。
 - Reopen when at least one Project exists
 - Planned route: Project metadata → Miro公開・配備面 → reREAD
 
+### R-027｜Jotform→Gmail受信監査
+**READY / PARTIAL / NO RECEIPT EVIDENCE**
+
+- Jotform submission READ = PROVEN
+- Gmail search route = PROVEN
+- exact Submission ID / form title / Form ID / Jotform / New Submission / from:jotform.com searched
+- all six searches returned 0 message IDs
+- Do not conclude non-delivery from this alone
+- Reopen when notification configuration or a fresh receipt is available
+
 ## HOLD｜現在の接続では未開通
 
 ### H-006｜MotherDuck→Airtableデータ基盤台帳
