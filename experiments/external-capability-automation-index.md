@@ -109,6 +109,10 @@
 
 [実例029 Markdown](./external-capability-automation-example-029.md)
 
+### 030｜Coda制作資産統合台帳→Adobe紙カタログPDF化｜E2E PROVEN
+
+[実例030 Markdown](./external-capability-automation-example-030.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -154,6 +158,14 @@ API accessが使える状態になったら再実行する。
 - Webflow list_sites = PROVEN
 - accessible sites = 0
 
+### R-015｜Apollo企業探索→Airtable企業リサーチ台帳
+**READY / CREDIT GATE**
+
+- Apollo global company search = exposed
+- 1 request = 1 credit
+- explicit approval required before execution
+- personal email / phoneは今回使わない
+
 ## HOLD｜現在の接続では未開通
 
 ### H-001｜Canva→Adobe PDF化
@@ -181,7 +193,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-030.md` 以降を追加する。
+`external-capability-automation-example-031.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
