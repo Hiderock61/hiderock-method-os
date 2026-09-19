@@ -203,6 +203,15 @@ API accessが使える状態になったら再実行する。
 - editable apps = 0
 - Appが入った時点でAirtable開発プロジェクト台帳へ合流可能
 
+### R-019｜MongoDB Atlas→Airtableデータ基盤台帳
+**READY / NO PROJECTS**
+
+- Atlas organization READ = PROVEN
+- organizations = 1
+- Atlas project list READ = PROVEN
+- projects = 0
+- Project作成後にcluster metadata→Airtable台帳化を再試験
+
 ## HOLD｜現在の接続では未開通
 
 ### H-003｜ClickHouse Cloud→Airtableデータ基盤台帳
