@@ -165,6 +165,10 @@
 
 [実例043 Markdown](./external-capability-automation-example-043.md)
 
+### 044｜Podcast App→Xmind AIプロトタイピング音声学習ルート｜E2E PROVEN
+
+[実例044 Markdown](./external-capability-automation-example-044.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -332,7 +336,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-044.md` 以降を追加する。
+`external-capability-automation-example-045.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
