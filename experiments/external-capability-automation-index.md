@@ -317,6 +317,17 @@ API accessが使える状態になったら再実行する。
 
 ## HOLD｜現在の接続では未開通
 
+### H-005｜Convex→Airtableバックエンド基盤台帳
+**HOLD / NO LIVE READ SURFACE**
+
+- Current Convex tools are guidance/runbook oriented
+- start_convex_app = guidance
+- add_convex_to_existing_project = guidance
+- get_convex_scaling_guidance = guidance
+- get_runbook = guidance
+- No live Project / Deployment / Database inventory READ surface is currently exposed
+- Reopen when Convex live account/project read tools appear
+
 ### H-004｜AWS Data Analytics
 **HOLD / USER PASS**
 
