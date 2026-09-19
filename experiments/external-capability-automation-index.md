@@ -3,43 +3,89 @@
 このファイルは、Plugin単体の能力表ではなく、**複数Pluginを組み合わせて実際に通った自動化回路**だけを残す索引。
 
 ## 昇格条件
-次の4条件を満たしたものだけ `実例00X` として追加する。
 
 1. 複数Pluginを実際に組み合わせた
 2. 現実の工程が1つ以上進んだ
 3. 実行結果を再READまたは別センサーで確認できた
 4. PROVEN範囲と未実証範囲を分けて書ける
 
+## 保存先
+
+- **Notion**：背景、意味、使い道、次に何が増えたか
+- **GitHub**：配線、判定ロジック、PROVEN範囲、再利用可能なMarkdown
+
 ## 実例一覧
 
-001〜021は既存正本を参照。
+### 001｜本館・公開監査自動化｜E2E PROVEN
+[実例001 Markdown](./external-capability-automation-example-001.md)
+
+### 002｜Web調査→学術根拠監査→正本化｜E2E PROVEN
+[実例002 Markdown](./external-capability-automation-example-002.md)
+
+### 003｜Notion→Xmind＋FigJam｜同一内容の多視点化｜E2E PROVEN
+[実例003 Markdown](./external-capability-automation-example-003.md)
+
+### 004｜Binance→Flourish→Notion｜市場データ可視化｜E2E PROVEN
+[実例004 Markdown](./external-capability-automation-example-004.md)
+
+### 005｜GitHub仕事受付↔Jotform整合監査｜E2E PROVEN
+[実例005 Markdown](./external-capability-automation-example-005.md)
+
+### 006｜公開サイト→Xmind導線地図化｜E2E PROVEN
+[実例006 Markdown](./external-capability-automation-example-006.md)
+
+### 007｜GitHub図鑑→Coda台帳化｜E2E PROVEN
+[実例007 Markdown](./external-capability-automation-example-007.md)
+
+### 008｜Jotform相談→Notion案件カード化｜E2E PROVEN（テストデータ）
+[実例008 Markdown](./external-capability-automation-example-008.md)
+
+### 009｜Consensus→Xmind研究地図化｜E2E PROVEN
+[実例009 Markdown](./external-capability-automation-example-009.md)
+
+### 010｜Podcast App→Notion研究棚化｜E2E PROVEN
+[実例010 Markdown](./external-capability-automation-example-010.md)
+
+### 011｜Jotform相談→Airtable案件台帳化｜E2E PROVEN（テストデータ）
+[実例011 Markdown](./external-capability-automation-example-011.md)
+
+### 012｜Google Drive→Airtable制作資料台帳化｜E2E PROVEN
+[実例012 Markdown](./external-capability-automation-example-012.md)
+
+### 013｜Airtable案件DB→Trello作業ボード化｜E2E PROVEN（テストデータ）
+[実例013 Markdown](./external-capability-automation-example-013.md)
+
+### 014｜Airtable案件DB→Trello→Linear課題化｜E2E PROVEN（テストデータ）
+[実例014 Markdown](./external-capability-automation-example-014.md)
+
+### 015｜Google Drive資産→Adobe PDFカタログ化｜E2E PROVEN
+[実例015 Markdown](./external-capability-automation-example-015.md)
+
+### 016｜Airtable案件DB→monday.com業務ボード化｜E2E PROVEN（テストデータ）
+[実例016 Markdown](./external-capability-automation-example-016.md)
+
+### 017｜Airtable案件DB→monday.com→Vibe内部アプリ化｜E2E PROVEN（テストデータ）
+[実例017 Markdown](./external-capability-automation-example-017.md)
+
+### 018｜Apple Music→Airtable音楽リファレンス台帳化｜E2E PROVEN
+[実例018 Markdown](./external-capability-automation-example-018.md)
+
+### 019｜Apple Music×Shazam→音源版監査DB｜E2E PROVEN
+[実例019 Markdown](./external-capability-automation-example-019.md)
+
+### 020｜GitHub成功図鑑→Miro配線俯瞰表｜E2E PROVEN
+[実例020 Markdown](./external-capability-automation-example-020.md)
+
+### 021｜Canva→Airtable制作資産台帳化｜E2E PROVEN
+[実例021 Markdown](./external-capability-automation-example-021.md)
 
 ### 022｜GitHub成功図鑑→Plugin頻度集計→Flourish可視化｜E2E PROVEN
-
-```text
-GitHub INDEX
-  ↓
-001〜021の主回路集計
-  ↓
-Plugin出現回数
-  ↓
-Flourish bar chart
-  ↓
-再READ
-```
-
-- 24 Pluginを集計
-- Notion 9
-- Airtable 9
-- GitHub 4
-- Xmind 3
-- Jotform 3
-- Flourish visualisation ID 30302746
-- is_published = false
-
 [実例022 Markdown](./external-capability-automation-example-022.md)
 
-## READY｜実行可能・実データ待ち
+### 023｜SciSpace→Scite→Miro研究マトリクス｜E2E PROVEN
+[実例023 Markdown](./external-capability-automation-example-023.md)
+
+## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
 **READY / NO TEST DATA**
@@ -68,14 +114,20 @@ Flourish bar chart
 ### R-009｜Notion→WordPress Draft化
 **READY / NO SITE**
 
+### R-011｜Elicit→Scite→Miro研究マトリクス
+**READY / PLAN GATE**
+
+Elicit search_papers は `api_access_denied`。
+API accessが使える状態になったら再実行する。
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-023.md` 以降を追加する。
+`external-capability-automation-example-024.md` 以降を追加する。
 
-READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
+READY候補は成功番号を消費しない。
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
 この図鑑 = 成功して使える回路の完成見本  
-READY = 能力は揃っており、実データが来れば試せる回路
+READY = 能力は揃っており、条件が満たされれば試せる回路
