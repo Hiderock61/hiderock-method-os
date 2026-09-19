@@ -3,7 +3,6 @@
 このファイルは、Plugin単体の能力表ではなく、**複数Pluginを組み合わせて実際に通った自動化回路**だけを残す索引。
 
 ## 昇格条件
-
 次の4条件を満たしたものだけ `実例00X` として追加する。
 
 1. 複数Pluginを実際に組み合わせた
@@ -11,158 +10,34 @@
 3. 実行結果を再READまたは別センサーで確認できた
 4. PROVEN範囲と未実証範囲を分けて書ける
 
-## 保存先
-
-成功したら毎回、同じ実例を2か所へ残す。
-
-- **Notion**：背景、意味、使い道、次に何が増えたか
-- **GitHub**：配線、判定ロジック、PROVEN範囲、再利用可能なMarkdown
-
-## 図鑑へ入れないもの
-
-- 単体Pluginの接続確認だけ
-- ツール露出だけ
-- BLOCKED
-- 一般論として「できるはず」の案
-
-HOLD / PARTIALでも、**構成能力が確認済みで、実データ待ちだけのもの**は READY 候補として別欄へ残す。
-
 ## 実例一覧
 
-### 001｜本館・公開監査自動化｜E2E PROVEN
-[実例001 Markdown](./external-capability-automation-example-001.md)
+001〜021は既存正本を参照。
 
-### 002｜Web調査→学術根拠監査→正本化｜E2E PROVEN
-[実例002 Markdown](./external-capability-automation-example-002.md)
-
-### 003｜Notion→Xmind＋FigJam｜同一内容の多視点化｜E2E PROVEN
-[実例003 Markdown](./external-capability-automation-example-003.md)
-
-### 004｜Binance→Flourish→Notion｜市場データ可視化｜E2E PROVEN
-[実例004 Markdown](./external-capability-automation-example-004.md)
-
-### 005｜GitHub仕事受付↔Jotform整合監査｜E2E PROVEN
-[実例005 Markdown](./external-capability-automation-example-005.md)
-
-### 006｜公開サイト→Xmind導線地図化｜E2E PROVEN
-[実例006 Markdown](./external-capability-automation-example-006.md)
-
-### 007｜GitHub図鑑→Coda台帳化｜E2E PROVEN
-[実例007 Markdown](./external-capability-automation-example-007.md)
-
-### 008｜Jotform相談→Notion案件カード化｜E2E PROVEN（テストデータ）
-[実例008 Markdown](./external-capability-automation-example-008.md)
-
-### 009｜Consensus→Xmind研究地図化｜E2E PROVEN
-[実例009 Markdown](./external-capability-automation-example-009.md)
-
-### 010｜Podcast App→Notion研究棚化｜E2E PROVEN
-[実例010 Markdown](./external-capability-automation-example-010.md)
-
-### 011｜Jotform相談→Airtable案件台帳化｜E2E PROVEN（テストデータ）
-[実例011 Markdown](./external-capability-automation-example-011.md)
-
-### 012｜Google Drive→Airtable制作資料台帳化｜E2E PROVEN
-[実例012 Markdown](./external-capability-automation-example-012.md)
-
-### 013｜Airtable案件DB→Trello作業ボード化｜E2E PROVEN（テストデータ）
-[実例013 Markdown](./external-capability-automation-example-013.md)
-
-### 014｜Airtable案件DB→Trello→Linear課題化｜E2E PROVEN（テストデータ）
-[実例014 Markdown](./external-capability-automation-example-014.md)
-
-### 015｜Google Drive資産→Adobe PDFカタログ化｜E2E PROVEN
-[実例015 Markdown](./external-capability-automation-example-015.md)
-
-### 016｜Airtable案件DB→monday.com業務ボード化｜E2E PROVEN（テストデータ）
-[実例016 Markdown](./external-capability-automation-example-016.md)
-
-### 017｜Airtable案件DB→monday.com→Vibe内部アプリ化｜E2E PROVEN（テストデータ）
-[実例017 Markdown](./external-capability-automation-example-017.md)
-
-### 018｜Apple Music→Airtable音楽リファレンス台帳化｜E2E PROVEN
-
-```text
-Apple Music
-  ↓
-実在曲metadata
-  ↓
-版違い監査
-  ↓
-Airtable音楽リファレンス台帳
-  ↓
-再READ
-```
-
-- 3曲をApple Music ID付きで登録
-- 3/3再READ一致
-- batch matchingの版違いを検出
-- 監査ルール「曲名一致 ≠ 同じ音源版」を追加
-
-[実例018 Markdown](./external-capability-automation-example-018.md)
-
-### 019｜Apple Music×Shazam→音源版監査DB｜E2E PROVEN
-
-```text
-Apple Music
-  ↓
-参照曲確定
-  ↓
-Shazam再検索
-  ↓
-版 / ID / ISRC監査
-  ↓
-Airtable更新
-  ↓
-再READ
-```
-
-- 3曲をShazam検索経路で再監査
-- 同一ID / 別ID / 同一ISRC / Demo・Single版の差を確認
-- Airtableへ監査3列追加
-- 3/3再READ一致
-
-[実例019 Markdown](./external-capability-automation-example-019.md)
-
-### 020｜GitHub成功図鑑→Miro配線俯瞰表｜E2E PROVEN
+### 022｜GitHub成功図鑑→Plugin頻度集計→Flourish可視化｜E2E PROVEN
 
 ```text
 GitHub INDEX
   ↓
-001〜019抽出
+001〜021の主回路集計
   ↓
-Miro既存テストボード
+Plugin出現回数
   ↓
-19行の俯瞰表
-  ↓
-再READ
-```
-
-- Miro実機試験ボードへ表を作成
-- 001〜019を19行で投入
-- 19/19再READ一致
-- 雪だるま系譜マップはREAD可 / WRITE不可を確認
-
-[実例020 Markdown](./external-capability-automation-example-020.md)
-
-### 021｜Canva→Airtable制作資産台帳化｜E2E PROVEN
-
-```text
-Canva
-  ↓
-既存デザインmetadata
-  ↓
-Airtable制作資産台帳
+Flourish bar chart
   ↓
 再READ
 ```
 
-- owned designsから安全対象5件を選別
-- Canva get_designで正式metadata再取得
-- Airtableへ5 records
-- 5/5再READ一致
+- 24 Pluginを集計
+- Notion 9
+- Airtable 9
+- GitHub 4
+- Xmind 3
+- Jotform 3
+- Flourish visualisation ID 30302746
+- is_published = false
 
-[実例021 Markdown](./external-capability-automation-example-021.md)
+[実例022 Markdown](./external-capability-automation-example-022.md)
 
 ## READY｜実行可能・実データ待ち
 
@@ -196,7 +71,7 @@ Airtable制作資産台帳
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-022.md` 以降を追加する。
+`external-capability-automation-example-023.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
