@@ -244,6 +244,24 @@ API accessが使える状態になったら再実行する。
 - Keyword Research = 5 credits / call
 - 本人の明示なしでは消費しない
 
+### R-022｜Todoist構造→Airtable実行システム台帳
+**READY / NO PROJECTS**
+
+- Todoist account structure READ = PROVEN
+- Inbox = 1
+- Projects = 0
+- Sections = 0
+- Project/Sectionが増えた時点でAirtable台帳化を再試験
+
+### R-023｜Systeme.io事業資産→Airtable販売・運用台帳
+**READY / NO ASSETS**
+
+- Funnels READ = PROVEN / 0
+- Courses READ = PROVEN / 0
+- Campaigns READ = PROVEN / 0
+- Tags READ = PROVEN / 0
+- 資産が作成された時点でAirtable台帳化を再試験
+
 ## HOLD｜現在の接続では未開通
 
 ### H-004｜AWS Data Analytics
