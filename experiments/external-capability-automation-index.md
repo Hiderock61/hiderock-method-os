@@ -42,24 +42,34 @@ TinyFish ↔ Firecrawl
 Notion
 ```
 
-- GitHub正本READ = PROVEN
-- TinyFish公開READ = PROVEN
-- Firecrawl公開READ = PROVEN
-- 二眼比較 = PROVEN
-- 正本↔公開差分判定 = PROVEN
-- Notion記録 = PROVEN
-- 主要5導線監査 = 5/5 PASS
-
 [実例001 Markdown](./external-capability-automation-example-001.md)
+
+### 002｜Web調査→学術根拠監査→正本化｜E2E PROVEN
+
+```text
+Firecrawl
+  ↓
+Scite
+  ↓
+支持 / 限界の根拠監査
+  ↓
+Notion
+```
+
+試験テーマ：RAGとLLMハルシネーション。
+
+- Firecrawl web / research search = PROVEN
+- Scite literature / citation context / excerpt = PROVEN
+- 支持側と限界側の二方向監査 = PROVEN
+- Notion正本化 = PROVEN
+- Tavilyは今回不使用 / 接続失敗HOLD
+
+[実例002 Markdown](./external-capability-automation-example-002.md)
 
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-
-- `external-capability-automation-example-002.md`
-- `external-capability-automation-example-003.md`
-
-のように追加する。
+`external-capability-automation-example-003.md` 以降を追加する。
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
