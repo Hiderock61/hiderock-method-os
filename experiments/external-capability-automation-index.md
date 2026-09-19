@@ -313,6 +313,24 @@ Slack Lists追加認証フローが接続エラー。
 サイトが存在した時点で、
 Notion正本 → Draft記事 → 再READ を再実行する。
 
+### R-010｜Airtable案件DB→monday.com→Vibe内部アプリ化
+
+現在札：
+**READY / PROCESSING**
+
+- monday Vibe app ID = 10522390
+- name = Job Triage Board
+- board_view
+- is_published = false
+- status = PROCESSING_MESSAGE
+- code_versions = 0
+
+完成後にvibe_getで再READし、
+通れば次の成功番号へ昇格する。
+
+Editor:
+https://akechikuncoms-team.monday.com/vibe/app/10522390
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
