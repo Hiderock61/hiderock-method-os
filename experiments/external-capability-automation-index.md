@@ -22,11 +22,10 @@
 
 - 単体Pluginの接続確認だけ
 - ツール露出だけ
-- HOLD / BLOCKED
-- PARTIALのまま現実工程が閉じていないもの
+- BLOCKED
 - 一般論として「できるはず」の案
 
-それらは成果物047など監査ログ側に残す。
+HOLD / PARTIALでも、**構成能力が確認済みで、実データ待ちだけのもの**は READY 候補として別欄へ残す。
 
 ## 実例一覧
 
@@ -72,6 +71,36 @@ Notion
 
 [実例007 Markdown](./external-capability-automation-example-007.md)
 
+## READY｜実行可能・実データ待ち
+
+### 候補008｜Gmail予定候補↔Google Calendar取りこぼし監査
+
+```text
+Gmail
+  ↓
+予定候補抽出
+  ↓
+Google Calendar
+  ↓
+登録済み / 未登録 / 判断不能
+  ↓
+Notion
+```
+
+確認済み：
+- Gmail search = PROVEN
+- Gmail絞り込み = PROVEN
+- Google Calendar一覧READ = PROVEN
+- Calendar期間検索 = PROVEN
+
+未実証：
+- 実予定メールとCalendar予定のE2E照合
+
+現在札：
+**READY / NO TEST DATA**
+
+実際の予約・面談・診察・訪問などのメールと比較対象Calendar予定が揃ったら再実行し、通れば正式な実例008へ昇格する。
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
@@ -79,4 +108,5 @@ Notion
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
-この図鑑 = 成功して使える回路の完成見本
+この図鑑 = 成功して使える回路の完成見本  
+READY = 能力は揃っており、実データが来れば試せる回路
