@@ -121,6 +121,10 @@
 
 [実例032 Markdown](./external-capability-automation-example-032.md)
 
+### 033｜Lovable→Airtable開発プロジェクト台帳｜E2E PROVEN
+
+[実例033 Markdown](./external-capability-automation-example-033.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -192,6 +196,13 @@ API accessが使える状態になったら再実行する。
 - prices = 0
 - 商品または価格が入った時点でAirtable台帳化を再試験
 
+### R-018｜Replit→Airtable開発プロジェクト台帳
+**READY / NO APPS**
+
+- Replit list_apps = PROVEN
+- editable apps = 0
+- Appが入った時点でAirtable開発プロジェクト台帳へ合流可能
+
 ## HOLD｜現在の接続では未開通
 
 ### H-001｜Canva→Adobe PDF化
@@ -219,7 +230,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-033.md` 以降を追加する。
+`external-capability-automation-example-034.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
