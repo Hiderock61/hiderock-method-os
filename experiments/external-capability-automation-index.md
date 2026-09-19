@@ -317,6 +317,18 @@ API accessが使える状態になったら再実行する。
 
 ## HOLD｜現在の接続では未開通
 
+### H-006｜MotherDuck→Airtableデータ基盤台帳
+**HOLD / AUTH RECONNECT LOOP**
+
+- MotherDuck runtime tools exposed
+- Plugin permission object = found
+- Plugin Directory search = 0 results
+- Live READ triggers expired-auth reconnect gate
+- Reconnect → Allow → connected → immediately expired again
+- Do not keep retrying reconnect
+- Do not uninstall yet because reinstall path is not currently verified
+- Reopen after auth/directory state normalizes
+
 ### H-005｜Convex→Airtableバックエンド基盤台帳
 **HOLD / NO LIVE READ SURFACE**
 
