@@ -319,6 +319,15 @@ API accessが使える状態になったら再実行する。
 - projects = 0
 - Project作成後に Service / Environment / Deployment metadata → Airtable台帳化を再試験
 
+### R-025｜AppDeploy→Miro公開・配備面
+**READY / NO APPS**
+
+- AppDeploy get_apps = PROVEN
+- apps = 0
+- Existing-app status/version/QA/source snapshot READ surfaces are exposed
+- Reopen when at least one App exists
+- Planned route: App metadata → Miro公開・配備面 → reREAD
+
 ## HOLD｜現在の接続では未開通
 
 ### H-006｜MotherDuck→Airtableデータ基盤台帳
