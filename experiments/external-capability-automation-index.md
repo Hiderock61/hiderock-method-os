@@ -178,6 +178,16 @@ API accessが使える状態になったら再実行する。
 - product count = 0
 - 商品が入った時点でAirtable台帳化を再試験
 
+### R-017｜Stripe商品・価格→Airtable販売インフラ台帳
+**READY / NO PRODUCTS OR PRICES**
+
+- Stripe test-mode account READ = PROVEN
+- GetProducts = PROVEN
+- GetPrices = PROVEN
+- products = 0
+- prices = 0
+- 商品または価格が入った時点でAirtable台帳化を再試験
+
 ## HOLD｜現在の接続では未開通
 
 ### H-001｜Canva→Adobe PDF化
