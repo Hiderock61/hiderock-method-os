@@ -73,7 +73,7 @@ Notion
 
 ## READY｜実行可能・実データ待ち
 
-### 候補008｜Gmail予定候補↔Google Calendar取りこぼし監査
+### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
 
 ```text
 Gmail
@@ -101,10 +101,45 @@ Notion
 
 実際の予約・面談・診察・訪問などのメールと比較対象Calendar予定が揃ったら再実行し、通れば正式な実例008へ昇格する。
 
+
+### R-002｜GitHub実例図鑑→Lucid配線図化
+
+```text
+GitHub INDEX
+  ↓
+Mermaidへ構造化
+  ↓
+Lucidchart
+  ↓
+配線図
+```
+
+確認済み：
+- GitHub INDEX READ = PROVEN
+- Mermaid構造生成 = PROVEN
+- Lucidchart document create = PROVEN
+- Lucid metadata READ = PROVEN
+- Lucid document fetch = PROVEN
+
+現在の制約：
+- Mermaid図がLucid側では1つの埋め込み図ブロックとして返る
+- 内部ノード文字をLucid自身から再READできない
+- document searchでも 001 / GitHub / Notion / 007 はヒットしない
+
+現在札：
+**READY / PARTIAL**
+
+Lucid側でMermaid内部ノードを構造READできる手段が露出したら再監査する。
+
+Lucid document:
+https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
+
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
 `external-capability-automation-example-008.md` 以降を追加する。
+
+READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
