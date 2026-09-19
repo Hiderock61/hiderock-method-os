@@ -76,6 +76,26 @@ Notion研究カード
 
 [実例010 Markdown](./external-capability-automation-example-010.md)
 
+### 011｜Jotform相談→Airtable案件台帳化｜E2E PROVEN（テストデータ）
+
+```text
+Jotform
+  ↓
+相談送信READ
+  ↓
+Airtable案件台帳
+  ↓
+再READ
+```
+
+- 実機試験用Airtable Baseを使用
+- 仕事相談案件テーブルを新規作成
+- Jotformテスト送信3件 → Airtable 3 records
+- 3/3再READ一致
+- 運用DBとして「新規」状態を保持
+
+[実例011 Markdown](./external-capability-automation-example-011.md)
+
 ## READY｜実行可能・実データ待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -110,7 +130,7 @@ https://lucid.app/lucidchart/322e7e2b-b674-4c8c-88d2-75a19264ef7f/edit
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-011.md` 以降を追加する。
+`external-capability-automation-example-012.md` 以降を追加する。
 
 READY候補は成功番号を消費せず、`R-001 / R-002...` で管理する。
 
