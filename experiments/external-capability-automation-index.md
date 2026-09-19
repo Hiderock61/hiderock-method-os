@@ -193,6 +193,10 @@
 
 [実例050 Markdown](./external-capability-automation-example-050.md)
 
+### 051｜Jotform→Airtable→Trello→Linear→GitHub→Todoist｜6段証拠鎖｜E2E PROVEN
+
+[実例051 Markdown](./external-capability-automation-example-051.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -410,7 +414,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-051.md` 以降を追加する。
+`external-capability-automation-example-052.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
