@@ -306,6 +306,15 @@ API accessが使える状態になったら再実行する。
 - Tags READ = PROVEN / 0
 - 資産が作成された時点でAirtable台帳化を再試験
 
+### R-024｜Railway→Airtableデプロイ基盤台帳
+**READY / NO PROJECTS**
+
+- Railway workspace READ = PROVEN
+- personal workspace = 1
+- projectCount = 0
+- projects = 0
+- Project作成後に Service / Environment / Deployment metadata → Airtable台帳化を再試験
+
 ## HOLD｜現在の接続では未開通
 
 ### H-004｜AWS Data Analytics
