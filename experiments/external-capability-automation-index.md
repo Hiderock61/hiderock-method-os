@@ -173,6 +173,10 @@
 
 [実例045 Markdown](./external-capability-automation-example-045.md)
 
+### 046｜Plugin Management＋Runtime→Airtable外付け能力接続台帳｜E2E PROVEN
+
+[実例046 Markdown](./external-capability-automation-example-046.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -340,7 +344,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-046.md` 以降を追加する。
+`external-capability-automation-example-047.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
