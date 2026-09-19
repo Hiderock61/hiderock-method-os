@@ -133,6 +133,10 @@
 
 [実例035 Markdown](./external-capability-automation-example-035.md)
 
+### 036｜vidIQ Voice Library→Airtableナレーション音声台帳｜E2E PROVEN
+
+[実例036 Markdown](./external-capability-automation-example-036.md)
+
 ## READY｜実行可能・条件待ち
 
 ### R-001｜Gmail予定候補↔Google Calendar取りこぼし監査
@@ -228,6 +232,14 @@ API accessが使える状態になったら再実行する。
 - private avatar groups = 0
 - 資産が入った時点でAirtableメディア制作資産台帳へ再試験
 
+### R-021｜vidIQ Keyword Research→Airtable動画企画観測台帳
+**READY / CREDIT GATE**
+
+- vidIQ balance READ = PROVEN
+- renewable credits = 145 / 150
+- Keyword Research = 5 credits / call
+- 本人の明示なしでは消費しない
+
 ## HOLD｜現在の接続では未開通
 
 ### H-004｜AWS Data Analytics
@@ -274,7 +286,7 @@ Canva export tool露出またはAdobe upload bridge修正後に再試験。
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-036.md` 以降を追加する。
+`external-capability-automation-example-037.md` 以降を追加する。
 
 READY候補は成功番号を消費しない。
 
