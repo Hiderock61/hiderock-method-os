@@ -46,31 +46,36 @@
 [実例005 Markdown](./external-capability-automation-example-005.md)
 
 ### 006｜公開サイト→Xmind導線地図化｜E2E PROVEN
+[実例006 Markdown](./external-capability-automation-example-006.md)
+
+### 007｜GitHub図鑑→Coda台帳化｜E2E PROVEN
 
 ```text
-TinyFish
+GitHub INDEX
   ↓
-公開ページ本文＋リンク抽出
+1実例 = 1行へ構造化
   ↓
-Xmind Tree Chart
+Coda
+  ↓
+6行台帳
   ↓
 再READ
   ↓
 Notion
 ```
 
-- Firecrawl map = PARTIAL
-- Firecrawl crawl = HOLD / 429
-- TinyFishへ差し替えて完走
-- Xmind上位6枝を生成
-- Xmind再READ = PROVEN
+- Coda document create = PROVEN
+- Coda table create = PROVEN
+- 6 rows insert = PROVEN
+- Coda再READ = PROVEN
+- 6/6 rows一致 = PROVEN
 
-[実例006 Markdown](./external-capability-automation-example-006.md)
+[実例007 Markdown](./external-capability-automation-example-007.md)
 
 ## 次
 
 新しい組み合わせがE2Eで成功した時だけ、
-`external-capability-automation-example-007.md` 以降を追加する。
+`external-capability-automation-example-008.md` 以降を追加する。
 
 監査ルーム = 部品検査  
 配線ルーム = 組み合わせ発見  
