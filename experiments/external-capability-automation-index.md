@@ -205,6 +205,16 @@ API accessが使える状態になったら再実行する。
 
 ## HOLD｜現在の接続では未開通
 
+### H-003｜ClickHouse Cloud→Airtableデータ基盤台帳
+**HOLD / SERVICE MCP BLOCKED**
+
+- organization metadata = PROVEN
+- service metadata = PROVEN
+- database list = BLOCKED
+- error = Forbidden. Service does not allow MCP calls
+- Service側でMCP data-plane accessが許可された時点で再試験
+
+
 ### H-001｜Canva→Adobe PDF化
 **HOLD / STORAGE BRIDGE BLOCKED**
 
