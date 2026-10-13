@@ -215,6 +215,13 @@ BONSAI©️は一般的な複数専門家パネルではないため、**初見A
 
 ## このリポジトリ外にある正本
 
+### ⛄ 雪だるま法©️ 現行v0.2・Plugin装着実地追補（2026-10-13）
+- **人間向け公開説明**：[雪だるま法©️ × 太った君©️](https://hiderock61.github.io/methods/snowball.html)
+- **AI向け完全起動書**：[SNOWBALL_START_HERE.md](https://github.com/Hiderock61/hiderock61.github.io/blob/main/methods/SNOWBALL_START_HERE.md)
+- **運用正本**：Notion「雪だるま法©️ 現行v0.2」「太った君©️名簿」「成果物047・048・049」。Githubの公開説明を最新の顧客実機証拠と取り違えない。
+- **役割**：🥷HOWTOザムライ＝動詞分解／🤖自己認識明智くん＝既存能力照合／🤩平賀カラクリ＝Plugin内部Input→Outputの搬送配線。
+- **太った君©️**：古い能力を脱がず、足りない能力を選択装着して再利用する能力パッケージ。あだ名は別AI人格ではない。
+
 ### 🤖 ROU-DOU編集方法©️ v1.0
 公開総合棚 `Hiderock61/hiderock61.github.io` の `methods/ROU-DOU_EDIT_METHOD.md` が正本。
 
